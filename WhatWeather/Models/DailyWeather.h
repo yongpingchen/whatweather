@@ -11,8 +11,7 @@
 
 @interface DailyWeather : PeriodWeatherInfo
 
-@property(nonatomic, retain)NSDate *time;
-@property(nonatomic, assign)float *maxTemp;
-@property(nonatomic, assign)float *minTemp;
+@property(nonatomic, assign)float maxTemp;
+@property(nonatomic, assign)float minTemp;
 
 @end

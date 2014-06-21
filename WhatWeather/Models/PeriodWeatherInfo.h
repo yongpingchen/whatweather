@@ -13,13 +13,14 @@ typedef NS_ENUM(NSUInteger, ForcastIOPrecipType){
     ForcastIOPrecipTypeRain,
     ForcastIOPrecipTypeSnow,
     ForcastIOPrecipTypeSleet,
-    ForcastIOPrecipTypeHail
+    ForcastIOPrecipTypeHail,
+    ForcastIOPrecipTypeUndefine
 };
 
 @interface PeriodWeatherInfo : BasicWeatherInfo
 
-@property (nonatomic, assign)float *precipIntensity; //unit: in./hr (inches of liquid water per hour)
-@property (nonatomic, assign)float *precipProbability; //A numerical value between 0 and 1 (inclusive) representing the probability of precipitation occuring at the given time.
+@property (nonatomic, assign)float precipIntensity; //unit: in./hr (inches of liquid water per hour)
+@property (nonatomic, assign)float precipProbability; //A numerical value between 0 and 1 (inclusive) representing the probability of precipitation occuring at the given time.
 @property (nonatomic, assign)ForcastIOPrecipType precipType; //representing the type of precipitation occurring at the given time.
 
 @end

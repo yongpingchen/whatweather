@@ -11,6 +11,4 @@
 
 @interface HourlyWeather : PeriodWeatherInfo
 
-@property (nonatomic, retain)NSDate *time;
-
 @end
