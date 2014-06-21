@@ -34,7 +34,9 @@
 -(void)forcastRequestWithLongitude:(NSNumber *)longitude latitude:(NSNumber *)latitude FinishedBlock:(CYPForcastIORequestFinishBlock)finishedBlock failedBlock:(CYPForcastIORequestFailedBlock)failedBlock
 {
     NSString *requestURLString = [NSString stringWithFormat:@"%@/%f,%f",_forcastBasicURL,latitude.floatValue, longitude.floatValue];
+    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
     [manager GET:requestURLString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         finishedBlock(responseObject);
         
