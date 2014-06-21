@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WeatherBasicInfo.h"
+#import "BasicWeatherInfo.h"
 
-@interface NowWeather : WeatherBasicInfo
+@interface NowWeather : BasicWeatherInfo
 
 @end

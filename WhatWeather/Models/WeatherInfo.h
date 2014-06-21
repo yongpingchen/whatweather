@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NowWeather.h"
+#import "HourlyWeather.h"
+#import "DailyWeather.h"
 
 @interface WeatherInfo : NSObject
+
+@property(nonatomic, retain)NowWeather *currentlyWeather;
+@property(nonatomic, retain)NSArray *hourlyWeathers;
+@property(nonatomic, retain)NSArray *dailyWeathers;
 
 @end
