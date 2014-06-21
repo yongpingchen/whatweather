@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^CYPForcastIORequestFinishBlock) (id response);
+typedef void(^CYPForcastIORequestFailedBlock) (NSError *error);
+
+
 @interface CYPForcastIOManager : NSObject
+
++(id) sharedManager;
+
+-(void)forcastRequestWithLongitude:(NSNumber *)longitude latitude:(NSNumber *)latitude FinishedBlock:(CYPForcastIORequestFinishBlock) finishedBlock failedBlock:(CYPForcastIORequestFailedBlock)failedBlock;
 
 @end
