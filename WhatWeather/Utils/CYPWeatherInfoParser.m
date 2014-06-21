@@ -19,21 +19,21 @@
 
 @implementation CYPWeatherInfoParser
 
-+(WeatherInfo *)weatherInfoWithJsonData: (NSData *)weatherData
++(WeatherInfo *)weatherInfoWithJsonObject: (NSDictionary *)weatherInfoDict
 {
     WeatherInfo *parsedWeatherInfo;
     
     NSError *error;
-    NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:weatherData options:NSJSONReadingAllowFragments error:&error];
+    NSDictionary *jsonObject = weatherInfoDict;
     
     if (error || !jsonObject) {
         return nil;
     }
     parsedWeatherInfo = [[WeatherInfo alloc] init];
     
-    NSDictionary *currentlyWeatherDict = currentlyWeatherDict[@"currently"];
-    NSArray *dailyWeatherDicts = currentlyWeatherDict[@"daily"];
-    NSArray *hourlyWeatherDicts = currentlyWeatherDict[@"hourly"];
+    NSDictionary *currentlyWeatherDict = weatherInfoDict[@"currently"];
+    NSArray *dailyWeatherDicts = weatherInfoDict[@"daily"][@"data"];
+    NSArray *hourlyWeatherDicts = weatherInfoDict[@"hourly"][@"data"];
     
     //parsing currently part
     if (currentlyWeatherDict) {

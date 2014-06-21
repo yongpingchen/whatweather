@@ -9,6 +9,7 @@
 #import "CYPNowViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "CYPForcastIOManager.h"
+#import "CYPWeatherInfoParser.h"
 
 @interface CYPNowViewController ()<CLLocationManagerDelegate>
 {
@@ -74,9 +75,8 @@
         [[CYPForcastIOManager sharedManager] forcastRequestWithLongitude:[NSNumber numberWithFloat:currentLocation.coordinate.longitude]
                                                                 latitude:[NSNumber numberWithFloat:currentLocation.coordinate.latitude]
                                                            FinishedBlock:^(id response) {
-                                                               NSLog(@"response:%@", response);
-                                                                    
-                                                                }
+                                                               WeatherInfo *parsedInfo = [CYPWeatherInfoParser weatherInfoWithJsonObject:response];
+                                                           }
                                                              failedBlock:^(NSError *error) {
                                                                  NSLog(@"error:%@",error.description);
                                                                     

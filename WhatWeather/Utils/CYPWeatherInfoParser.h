@@ -10,5 +10,5 @@
 @class WeatherInfo;
 
 @interface CYPWeatherInfoParser : NSObject
-+(WeatherInfo *)weatherInfoWithJsonData: (NSData *)weatherData;
++(WeatherInfo *)weatherInfoWithJsonObject: (NSDictionary *)weatherInfoDict;
 @end
