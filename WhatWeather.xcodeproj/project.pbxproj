@@ -22,6 +22,12 @@
 		BE3A69B919551C81007EAD39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3A699B19551C80007EAD39 /* UIKit.framework */; };
 		BE3A69C119551C81007EAD39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE3A69BF19551C81007EAD39 /* InfoPlist.strings */; };
 		BE3A69C319551C81007EAD39 /* WhatWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3A69C219551C81007EAD39 /* WhatWeatherTests.m */; };
+		BE649BB519554ECD0010FA26 /* CYPNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BB419554ECD0010FA26 /* CYPNowViewController.m */; };
+		BE649BB619554ECD0010FA26 /* CYPNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BB419554ECD0010FA26 /* CYPNowViewController.m */; };
+		BE649BB919554EEE0010FA26 /* CYPWeeklyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BB819554EEE0010FA26 /* CYPWeeklyTableViewController.m */; };
+		BE649BBA19554EEE0010FA26 /* CYPWeeklyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BB819554EEE0010FA26 /* CYPWeeklyTableViewController.m */; };
+		BE649BBD19554F130010FA26 /* CYPTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BBC19554F130010FA26 /* CYPTodayViewController.m */; };
+		BE649BBE19554F130010FA26 /* CYPTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BBC19554F130010FA26 /* CYPTodayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,12 @@
 		BE3A69BE19551C81007EAD39 /* WhatWeatherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhatWeatherTests-Info.plist"; sourceTree = "<group>"; };
 		BE3A69C019551C81007EAD39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE3A69C219551C81007EAD39 /* WhatWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhatWeatherTests.m; sourceTree = "<group>"; };
+		BE649BB319554ECD0010FA26 /* CYPNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPNowViewController.h; sourceTree = "<group>"; };
+		BE649BB419554ECD0010FA26 /* CYPNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPNowViewController.m; sourceTree = "<group>"; };
+		BE649BB719554EEE0010FA26 /* CYPWeeklyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPWeeklyTableViewController.h; sourceTree = "<group>"; };
+		BE649BB819554EEE0010FA26 /* CYPWeeklyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPWeeklyTableViewController.m; sourceTree = "<group>"; };
+		BE649BBB19554F130010FA26 /* CYPTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPTodayViewController.h; sourceTree = "<group>"; };
+		BE649BBC19554F130010FA26 /* CYPTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPTodayViewController.m; sourceTree = "<group>"; };
 		D67F5D00B22F4979879586DD /* Pods-WhatWeather.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatWeather.xcconfig"; path = "Pods/Pods-WhatWeather.xcconfig"; sourceTree = "<group>"; };
 		E3962B4CA3B84ADB93EE8EDC /* libPods-WhatWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhatWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +130,8 @@
 		BE3A699D19551C80007EAD39 /* WhatWeather */ = {
 			isa = PBXGroup;
 			children = (
+				BE649BB119554E9C0010FA26 /* Utils */,
+				BE649BB219554E9C0010FA26 /* ViewControllers */,
 				BE3A69A619551C80007EAD39 /* CYPAppDelegate.h */,
 				BE3A69A719551C80007EAD39 /* CYPAppDelegate.m */,
 				BE3A69A919551C81007EAD39 /* Main.storyboard */,
@@ -156,6 +170,26 @@
 				BE3A69BF19551C81007EAD39 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE649BB119554E9C0010FA26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BE649BB219554E9C0010FA26 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE649BB319554ECD0010FA26 /* CYPNowViewController.h */,
+				BE649BB419554ECD0010FA26 /* CYPNowViewController.m */,
+				BE649BB719554EEE0010FA26 /* CYPWeeklyTableViewController.h */,
+				BE649BB819554EEE0010FA26 /* CYPWeeklyTableViewController.m */,
+				BE649BBB19554F130010FA26 /* CYPTodayViewController.h */,
+				BE649BBC19554F130010FA26 /* CYPTodayViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +325,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE649BB519554ECD0010FA26 /* CYPNowViewController.m in Sources */,
+				BE649BBD19554F130010FA26 /* CYPTodayViewController.m in Sources */,
 				BE3A69A419551C80007EAD39 /* main.m in Sources */,
 				BE3A69AE19551C81007EAD39 /* CYPViewController.m in Sources */,
 				BE3A69A819551C80007EAD39 /* CYPAppDelegate.m in Sources */,
+				BE649BB919554EEE0010FA26 /* CYPWeeklyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +338,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE649BBA19554EEE0010FA26 /* CYPWeeklyTableViewController.m in Sources */,
+				BE649BB619554ECD0010FA26 /* CYPNowViewController.m in Sources */,
 				BE3A69C319551C81007EAD39 /* WhatWeatherTests.m in Sources */,
+				BE649BBE19554F130010FA26 /* CYPTodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
