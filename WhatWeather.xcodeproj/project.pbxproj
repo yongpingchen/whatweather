@@ -32,6 +32,7 @@
 		BE649BC21955510B0010FA26 /* CYPForcastIOManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BC01955510B0010FA26 /* CYPForcastIOManager.m */; };
 		BE649BC519555A590010FA26 /* CYPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BC419555A590010FA26 /* CYPMainViewController.m */; };
 		BE649BC619555A590010FA26 /* CYPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BC419555A590010FA26 /* CYPMainViewController.m */; };
+		BE649BC819555B530010FA26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE649BC719555B530010FA26 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		BE649BC01955510B0010FA26 /* CYPForcastIOManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPForcastIOManager.m; sourceTree = "<group>"; };
 		BE649BC319555A590010FA26 /* CYPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPMainViewController.h; sourceTree = "<group>"; };
 		BE649BC419555A590010FA26 /* CYPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPMainViewController.m; sourceTree = "<group>"; };
+		BE649BC719555B530010FA26 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D67F5D00B22F4979879586DD /* Pods-WhatWeather.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatWeather.xcconfig"; path = "Pods/Pods-WhatWeather.xcconfig"; sourceTree = "<group>"; };
 		E3962B4CA3B84ADB93EE8EDC /* libPods-WhatWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhatWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE649BC819555B530010FA26 /* CoreLocation.framework in Frameworks */,
 				BE3A699A19551C80007EAD39 /* CoreGraphics.framework in Frameworks */,
 				BE3A699C19551C80007EAD39 /* UIKit.framework in Frameworks */,
 				BE3A699819551C80007EAD39 /* Foundation.framework in Frameworks */,
@@ -126,6 +129,7 @@
 		BE3A699619551C80007EAD39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE649BC719555B530010FA26 /* CoreLocation.framework */,
 				BE3A699719551C80007EAD39 /* Foundation.framework */,
 				BE3A699919551C80007EAD39 /* CoreGraphics.framework */,
 				BE3A699B19551C80007EAD39 /* UIKit.framework */,
