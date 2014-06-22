@@ -10,12 +10,19 @@
 #import "CYPForcastIOManager.h"
 #import "CYPWeatherInfoParser.h"
 #import <CoreLocation/CoreLocation.h>
+#import "CYPNowViewController.h"
+#import "CYPWeeklyTableViewController.h"
+#import "CYPTodayViewController.h"
 
 
 @interface CYPMainViewController ()<CLLocationManagerDelegate>
 {
     CLLocationManager   *locationManager;
     CLLocation          *currentLocation;
+    
+    CYPNowViewController *currentlyViewController;
+    CYPTodayViewController *todayViewController;
+    CYPWeeklyTableViewController *weeklyViewController;
 }
 @end
 
@@ -38,7 +45,27 @@
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    [locationManager startUpdatingLocation];}
+//    [locationManager startUpdatingLocation];
+    
+    //init the child view controllers
+    for (UIViewController *childContrller in self.childViewControllers) {
+        if ([childContrller isKindOfClass:[CYPNowViewController class]]) {
+            
+            currentlyViewController = (CYPNowViewController *)childContrller;
+            
+        }else if([childContrller isKindOfClass:[CYPTodayViewController class]]){
+            
+            todayViewController = (CYPTodayViewController *)childContrller;
+            
+        }else if([childContrller isKindOfClass:[CYPWeeklyTableViewController class]]){
+            
+            weeklyViewController = (CYPWeeklyTableViewController *)childContrller;
+            
+        }else{
+            NSLog(@"other view controller");
+        }
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -85,6 +112,8 @@
     [locationManager stopUpdatingLocation];
     
 }
+
+
 
 
 @end
