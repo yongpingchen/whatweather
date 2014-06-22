@@ -17,4 +17,5 @@
 @property(nonatomic, retain)NSArray *hourlyWeathers;
 @property(nonatomic, retain)NSArray *dailyWeathers;
 
+-(NSArray *)next12HoursWeather;
 @end
