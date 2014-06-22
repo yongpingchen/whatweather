@@ -87,6 +87,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="iconImageView" destination="NwE-Qj-Cpr" id="U6v-3L-JlK"/>
+                        <outlet property="temperatureLabel" destination="UdN-Jp-ECa" id="Mm1-W6-wOt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfT-AQ-7K6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,12 +7,15 @@
 //
 
 #import "CYPNowViewController.h"
-
+#import "BasicWeatherInfo.h"
 
 @interface CYPNowViewController ()
 {
 
 }
+@property (weak, nonatomic) IBOutlet UILabel *temperatureLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
+
 @end
 
 @implementation CYPNowViewController
@@ -39,6 +42,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)setBasicInfo:(BasicWeatherInfo *)basicInfo
+{
+    _temperatureLabel.text = [NSString stringWithFormat:@"%.0f",basicInfo.fahrenheitTemp];
+}
 /*
 #pragma mark - Navigation
 

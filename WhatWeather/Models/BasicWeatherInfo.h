@@ -7,23 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef NS_ENUM(NSUInteger, ForcastIOIcon){
-    ForcastIOIconClearDay,
-    ForcastIOIconClearNight,
-    ForcastIOIconRain,
-    ForcastIOIconSnow,
-    ForcastIOIconSleet,
-    ForcastIOIconWind,
-    ForcastIOIconFog,
-    ForcastIOIconCloudy,
-    ForcastIOIconPartlyCloudyDay,
-    ForcastIOIconPartlyCloudyNight,
-    ForcastIOIconHail,
-    ForcastIOIconThunderstorm,
-    ForcastIOIconTornado,
-    ForcastIOIconUndefine
-};
+#import "WeatherTypesSharedHeader.h"
 
 @interface BasicWeatherInfo : NSObject
 
