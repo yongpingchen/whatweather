@@ -108,7 +108,6 @@
                                                                currentlyViewController.basicInfo = parsedInfo.currentlyWeather;
                                                                todayViewController.hourlyWeathers = parsedInfo.next12HoursWeather;
                                                                weeklyViewController.dailyWeathers = parsedInfo.dailyWeathers;
-                                                               [weeklyViewController reloadTable];
                                                            }
                                                              failedBlock:^(NSError *error) {
                                                                  NSLog(@"error:%@",error.description);
