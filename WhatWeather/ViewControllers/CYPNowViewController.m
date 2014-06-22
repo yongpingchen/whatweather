@@ -85,6 +85,9 @@
         childViewController = weatherBriefViewController;
     }
     
+    [_contentView addSubview:childViewController.view];
     childViewController.basicInfo = _basicInfo;
+
+
 }
 @end
