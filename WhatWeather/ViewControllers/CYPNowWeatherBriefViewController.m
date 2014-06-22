@@ -1,23 +1,21 @@
 //
-//  CYPNowViewController.m
+//  CYPNowWeatherBriefViewController.m
 //  WhatWeather
 //
-//  Created by Chen Yongping on 6/21/14.
+//  Created by Chen Yongping on 6/22/14.
 //  Copyright (c) 2014 AllRoudHut. All rights reserved.
 //
 
-#import "CYPNowViewController.h"
-#import "CYPNowWeatherChildViewController.h"
+#import "CYPNowWeatherBriefViewController.h"
+#import "BasicWeatherInfo.h"
 
-@interface CYPNowViewController ()
-{
-    CYPNowWeatherChildViewController *childViewController;
-}
+@interface CYPNowWeatherBriefViewController ()
 
-
+@property (weak, nonatomic) IBOutlet UILabel *temperatureLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 @end
 
-@implementation CYPNowViewController
+@implementation CYPNowWeatherBriefViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,11 +30,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    for (UIViewController *viewController in self.childViewControllers) {
-        if ([viewController isKindOfClass:[CYPNowWeatherChildViewController class]]) {
-            childViewController = (CYPNowWeatherChildViewController *)viewController;
-        }
-    }
+}
+
+-(void)setBasicInfo:(BasicWeatherInfo *)basicInfo
+{
+    _temperatureLabel.text = [NSString stringWithFormat:@"%.0f",basicInfo.celiusTemp];
+    _iconImageView.image = basicInfo.iconImage;
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,12 +44,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)setBasicInfo:(BasicWeatherInfo *)basicInfo
-{
-    if (childViewController) {
-        childViewController.basicInfo = basicInfo;
-    }
-}
 /*
 #pragma mark - Navigation
 
@@ -61,6 +54,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end

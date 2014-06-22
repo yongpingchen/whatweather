@@ -1,23 +1,18 @@
 //
-//  CYPNowViewController.m
+//  CYPNowWeatherChildViewController.m
 //  WhatWeather
 //
-//  Created by Chen Yongping on 6/21/14.
+//  Created by Chen Yongping on 6/22/14.
 //  Copyright (c) 2014 AllRoudHut. All rights reserved.
 //
 
-#import "CYPNowViewController.h"
 #import "CYPNowWeatherChildViewController.h"
 
-@interface CYPNowViewController ()
-{
-    CYPNowWeatherChildViewController *childViewController;
-}
-
+@interface CYPNowWeatherChildViewController ()
 
 @end
 
-@implementation CYPNowViewController
+@implementation CYPNowWeatherChildViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,11 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    for (UIViewController *viewController in self.childViewControllers) {
-        if ([viewController isKindOfClass:[CYPNowWeatherChildViewController class]]) {
-            childViewController = (CYPNowWeatherChildViewController *)viewController;
-        }
-    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,12 +35,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)setBasicInfo:(BasicWeatherInfo *)basicInfo
-{
-    if (childViewController) {
-        childViewController.basicInfo = basicInfo;
-    }
-}
 /*
 #pragma mark - Navigation
 
@@ -61,6 +45,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end

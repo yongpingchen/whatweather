@@ -107,11 +107,11 @@
             </objects>
             <point key="canvasLocation" x="-349" y="30"/>
         </scene>
-        <!--View Controller-->
+        <!--Now Weather Detail View Controller-->
         <scene sceneID="GVS-rI-w6a">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3N-2P-ocw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="uOK-mP-XWp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CYPNowWeatherDetailViewController" id="uOK-mP-XWp" customClass="CYPNowWeatherDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qTO-1E-yBa"/>
                         <viewControllerLayoutGuide type="bottom" id="hU7-Rj-x0O"/>
@@ -163,7 +163,7 @@
                     <size key="freeformSize" width="320" height="134"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="91" y="278"/>
+            <point key="canvasLocation" x="83" y="256"/>
         </scene>
         <!--Weekly Table View Controller-->
         <scene sceneID="FZv-cB-753">
@@ -306,11 +306,11 @@
             </objects>
             <point key="canvasLocation" x="-349" y="410"/>
         </scene>
-        <!--View Controller-->
+        <!--Now Weather Brief View Controller-->
         <scene sceneID="0FS-Ia-ahd">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H86-sA-z5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="aki-FL-EUi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CYPNowWeatherBriefViewController" id="aki-FL-EUi" customClass="CYPNowWeatherBriefViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G5R-Pc-cRD"/>
                         <viewControllerLayoutGuide type="bottom" id="cB9-ly-6Cx"/>
@@ -324,7 +324,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBM-Sz-Dpv">
-                                <rect key="frame" x="87" y="30" width="125" height="96"/>
+                                <rect key="frame" x="98" y="30" width="125" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <nil key="highlightedColor"/>
@@ -339,6 +339,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <size key="freeformSize" width="320" height="183"/>
+                    <connections>
+                        <outlet property="iconImageView" destination="3U0-VD-0er" id="khR-p5-eX1"/>
+                        <outlet property="temperatureLabel" destination="NBM-Sz-Dpv" id="AUf-mY-x7c"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="83" y="2"/>
