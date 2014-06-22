@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CYPWeeklyTableViewController : UITableViewController
-
+@property(nonatomic, retain)NSArray *dailyWeathers;
 @end

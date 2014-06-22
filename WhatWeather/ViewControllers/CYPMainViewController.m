@@ -107,6 +107,7 @@
                                                                WeatherInfo *parsedInfo = [CYPWeatherInfoParser weatherInfoWithJsonObject:response];
                                                                currentlyViewController.basicInfo = parsedInfo.currentlyWeather;
                                                                todayViewController.hourlyWeathers = parsedInfo.next12HoursWeather;
+                                                               weeklyViewController.dailyWeathers = parsedInfo.dailyWeathers;
                                                            }
                                                              failedBlock:^(NSError *error) {
                                                                  NSLog(@"error:%@",error.description);

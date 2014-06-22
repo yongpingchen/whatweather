@@ -7,6 +7,9 @@
 //
 
 #import "CYPWeeklyTableViewController.h"
+#import "CYPDailyWeatherTableViewCell.h"
+#import "DailyWeather.h"
+#import "NSDate+CYPDateHelper.h"
 
 @interface CYPWeeklyTableViewController ()
 
@@ -34,6 +37,12 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+-(void)setDailyWeathers:(NSArray *)dailyWeathers
+{
+    _dailyWeathers = dailyWeathers;
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -44,28 +53,39 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    if (_dailyWeathers) {
+        return _dailyWeathers.count;
+    }else{
+        return 0;
+    }
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    CYPDailyWeatherTableViewCell *cell = (CYPDailyWeatherTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"DailyWeatherCell" forIndexPath:indexPath];
     
+    if (!cell) {
+        cell = [[CYPDailyWeatherTableViewCell alloc] init];
+    }
     // Configure the cell...
+    DailyWeather *dailyWeather = _dailyWeathers[indexPath.row];
+    
+    cell.dayLabel.text = [dailyWeather.time JSTWeekDay];
+    cell.iconImageView.image = dailyWeather.iconImage;
+    cell.minTempLabel.text = [NSString stringWithFormat:@"%.0f",dailyWeather.minCeliusTemp];
+    cell.maxTempLabel.text = [NSString stringWithFormat:@"%.0f",dailyWeather.maxCeliusTemp];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

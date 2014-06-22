@@ -90,8 +90,8 @@
         dailyWeather.icon =             [CYPWeatherInfoParser iconFromString:iconText];
         
         //parse daily part
-        dailyWeather.maxTemp = [dailyWeatherDict[@"temperatureMax"] floatValue];
-        dailyWeather.minTemp = [dailyWeatherDict[@"temperatureMin"] floatValue];
+        dailyWeather.maxFahrenheitTemp = [dailyWeatherDict[@"temperatureMax"] floatValue];
+        dailyWeather.minFahrenheitTemp = [dailyWeatherDict[@"temperatureMin"] floatValue];
         
         [dailyWeathers addObject:dailyWeather];
     }
