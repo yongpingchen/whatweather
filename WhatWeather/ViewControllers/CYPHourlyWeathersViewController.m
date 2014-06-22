@@ -9,6 +9,7 @@
 #import "CYPHourlyWeathersViewController.h"
 #import "CYPHourlyWeatherCollectionCell.h"
 #import "HourlyWeather.h"
+#import "NSDate+CYPDateHelper.h"
 
 @interface CYPHourlyWeathersViewController ()
 
@@ -37,16 +38,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 -(void)setHourlyWeathers:(NSArray *)hourlyWeathers
 {
@@ -81,7 +72,8 @@
     }
     HourlyWeather *hourlyWeather = _hourlyWeathers[indexPath.row];
     
-    cell.timeLabel.text = [NSString stringWithFormat:@"%@",hourlyWeather.time];
+    //get hour from time
+    cell.timeLabel.text = [NSString stringWithFormat:@"%d時",hourlyWeather.time.JSTHour];
     cell.iconImageView.image = hourlyWeather.iconImage;
     cell.tempLabel.text = [NSString stringWithFormat:@"%.0f",hourlyWeather.celiusTemp];
     

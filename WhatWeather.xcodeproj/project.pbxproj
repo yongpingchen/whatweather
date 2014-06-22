@@ -51,6 +51,8 @@
 		BE649BF2195694D60010FA26 /* CYPHourlyWeathersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BF0195694D60010FA26 /* CYPHourlyWeathersViewController.m */; };
 		BE649BF6195696E40010FA26 /* CYPHourlyWeatherCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BF5195696E40010FA26 /* CYPHourlyWeatherCollectionCell.m */; };
 		BE649BF7195696E40010FA26 /* CYPHourlyWeatherCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BF5195696E40010FA26 /* CYPHourlyWeatherCollectionCell.m */; };
+		BE649BFA19569E700010FA26 /* NSDate+CYPDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BF919569E700010FA26 /* NSDate+CYPDateHelper.m */; };
+		BE649BFB19569E700010FA26 /* NSDate+CYPDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BF919569E700010FA26 /* NSDate+CYPDateHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		BE649BF0195694D60010FA26 /* CYPHourlyWeathersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPHourlyWeathersViewController.m; sourceTree = "<group>"; };
 		BE649BF4195696E40010FA26 /* CYPHourlyWeatherCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPHourlyWeatherCollectionCell.h; sourceTree = "<group>"; };
 		BE649BF5195696E40010FA26 /* CYPHourlyWeatherCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPHourlyWeatherCollectionCell.m; sourceTree = "<group>"; };
+		BE649BF819569E700010FA26 /* NSDate+CYPDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CYPDateHelper.h"; sourceTree = "<group>"; };
+		BE649BF919569E700010FA26 /* NSDate+CYPDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CYPDateHelper.m"; sourceTree = "<group>"; };
 		D67F5D00B22F4979879586DD /* Pods-WhatWeather.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatWeather.xcconfig"; path = "Pods/Pods-WhatWeather.xcconfig"; sourceTree = "<group>"; };
 		E3962B4CA3B84ADB93EE8EDC /* libPods-WhatWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhatWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -231,6 +235,8 @@
 				7D27DB7A1955BCDA005F97CF /* CYPWeatherInfoParser.m */,
 				BE649BE619567B330010FA26 /* CYPIconImage.h */,
 				BE649BE719567B330010FA26 /* CYPIconImage.m */,
+				BE649BF819569E700010FA26 /* NSDate+CYPDateHelper.h */,
+				BE649BF919569E700010FA26 /* NSDate+CYPDateHelper.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 				BE649BE4195571B30010FA26 /* BasicWeatherInfo.m in Sources */,
 				BE649BE0195571840010FA26 /* PeriodWeatherInfo.m in Sources */,
 				BE649BF6195696E40010FA26 /* CYPHourlyWeatherCollectionCell.m in Sources */,
+				BE649BFA19569E700010FA26 /* NSDate+CYPDateHelper.m in Sources */,
 				BE649BC11955510B0010FA26 /* CYPForcastIOManager.m in Sources */,
 				BE649BC519555A590010FA26 /* CYPMainViewController.m in Sources */,
 				BE649BD0195566AF0010FA26 /* NowWeather.m in Sources */,
@@ -442,6 +449,7 @@
 				7D27DB7C1955BCDA005F97CF /* CYPWeatherInfoParser.m in Sources */,
 				BE649BE5195571B30010FA26 /* BasicWeatherInfo.m in Sources */,
 				BE649BBA19554EEE0010FA26 /* CYPWeeklyTableViewController.m in Sources */,
+				BE649BFB19569E700010FA26 /* NSDate+CYPDateHelper.m in Sources */,
 				BE649BC619555A590010FA26 /* CYPMainViewController.m in Sources */,
 				BE649BD1195566AF0010FA26 /* NowWeather.m in Sources */,
 				BE649BE919567B330010FA26 /* CYPIconImage.m in Sources */,
