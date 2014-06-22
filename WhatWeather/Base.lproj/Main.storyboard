@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QDd-6M-8Ad">
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDd-6M-8Ad">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -24,7 +24,7 @@
                                     <segue destination="unJ-R8-WPU" kind="embed" id="2DT-Kt-fdV"/>
                                 </connections>
                             </containerView>
-                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EEg-wh-39z">
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEg-wh-39z">
                                 <rect key="frame" x="0.0" y="184" width="320" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -32,7 +32,7 @@
                                     <segue destination="3Dy-6y-Tuh" kind="embed" id="Q2t-98-OJx"/>
                                 </connections>
                             </containerView>
-                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rf6-fP-nuw">
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rf6-fP-nuw">
                                 <rect key="frame" x="0.0" y="295" width="320" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -42,6 +42,20 @@
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rf6-fP-nuw" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="275" id="3vr-A8-TQH"/>
+                            <constraint firstItem="rf6-fP-nuw" firstAttribute="leading" secondItem="QDd-6M-8Ad" secondAttribute="leading" id="8F8-Am-L3Y"/>
+                            <constraint firstItem="EEg-wh-39z" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="184" id="Es0-Qf-0ad"/>
+                            <constraint firstAttribute="bottom" secondItem="rf6-fP-nuw" secondAttribute="bottom" id="Gra-Qi-VXl"/>
+                            <constraint firstItem="QDd-6M-8Ad" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="KMb-0q-wLe"/>
+                            <constraint firstItem="EEg-wh-39z" firstAttribute="top" secondItem="QDd-6M-8Ad" secondAttribute="bottom" constant="1" id="U7d-p6-MHx"/>
+                            <constraint firstAttribute="trailing" secondItem="rf6-fP-nuw" secondAttribute="trailing" id="Zt8-bm-pGh"/>
+                            <constraint firstItem="rf6-fP-nuw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="eZ0-Sz-dRP"/>
+                            <constraint firstItem="rf6-fP-nuw" firstAttribute="trailing" secondItem="EEg-wh-39z" secondAttribute="trailing" id="nHY-n5-dMi"/>
+                            <constraint firstItem="rf6-fP-nuw" firstAttribute="leading" secondItem="EEg-wh-39z" secondAttribute="leading" id="qjZ-TN-pky"/>
+                            <constraint firstItem="rf6-fP-nuw" firstAttribute="top" secondItem="EEg-wh-39z" secondAttribute="bottom" constant="1" id="rKY-jy-1Df"/>
+                            <constraint firstItem="rf6-fP-nuw" firstAttribute="trailing" secondItem="QDd-6M-8Ad" secondAttribute="trailing" id="rYP-Tm-Pjy"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
