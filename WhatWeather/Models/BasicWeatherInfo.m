@@ -14,6 +14,19 @@
 @end
 
 @implementation BasicWeatherInfo
+-(void)setFahrenheitTemp:(float)fahrenheitTemp
+{
+    _fahrenheitTemp = fahrenheitTemp;
+    //convert to celius temp
+    _celiusTemp = (_fahrenheitTemp-32)* 5/9;
+}
+
+-(void)setCeliusTemp:(float)celiusTemp
+{
+    _celiusTemp = celiusTemp;
+    //convert to fahrenheit temp
+    _fahrenheitTemp = _celiusTemp*9/5+32;
+}
 
 -(void)setIcon:(ForcastIOIcon)icon
 {

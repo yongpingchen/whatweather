@@ -44,7 +44,7 @@
 
 -(void)setBasicInfo:(BasicWeatherInfo *)basicInfo
 {
-    _temperatureLabel.text = [NSString stringWithFormat:@"%.0f",basicInfo.fahrenheitTemp];
+    _temperatureLabel.text = [NSString stringWithFormat:@"%.0f",basicInfo.celiusTemp];
     _iconImageView.image = basicInfo.iconImage;
 }
 /*
