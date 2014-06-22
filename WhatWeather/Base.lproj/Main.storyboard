@@ -107,6 +107,7 @@
                     <toolbarItems/>
                     <connections>
                         <outlet property="briefDetailButton" destination="SoB-aG-QtC" id="Tm9-qu-37W"/>
+                        <outlet property="contentView" destination="xVs-uw-BGj" id="C4U-4K-O0T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfT-AQ-7K6" userLabel="First Responder" sceneMemberID="firstResponder"/>

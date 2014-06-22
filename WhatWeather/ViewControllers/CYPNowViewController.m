@@ -8,14 +8,19 @@
 
 #import "CYPNowViewController.h"
 #import "CYPNowWeatherChildViewController.h"
+#import "CYPNowWeatherBriefViewController.h"
+#import "CYPNowWeatherDetailViewController.h"
 
 @interface CYPNowViewController ()
 {
     CYPNowWeatherChildViewController *childViewController;
-}
-@property (weak, nonatomic) IBOutlet UIButton *briefDetailButton;
-- (IBAction)tapBriefDetailButton:(id)sender;
 
+}
+
+@property (weak, nonatomic) IBOutlet UIButton *briefDetailButton;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+
+- (IBAction)tapBriefDetailButton:(id)sender;
 
 @end
 
@@ -49,6 +54,8 @@
 
 -(void)setBasicInfo:(BasicWeatherInfo *)basicInfo
 {
+    _basicInfo = basicInfo;
+    
     if (childViewController) {
         childViewController.basicInfo = basicInfo;
     }
@@ -67,11 +74,17 @@
 
 - (IBAction)tapBriefDetailButton:(id)sender {
     if ([_briefDetailButton.titleLabel.text isEqualToString:@"+"]) {
-    
-        [_briefDetailButton setTitle:@"-" forState:UIControlStateNormal];
-    }else{
         
+        [_briefDetailButton setTitle:@"-" forState:UIControlStateNormal];
+        CYPNowWeatherDetailViewController *weatherDetailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CYPNowWeatherDetailViewController"];
+        childViewController = weatherDetailViewController;
+        
+    }else{
         [_briefDetailButton setTitle:@"+" forState:UIControlStateNormal];
+        CYPNowWeatherBriefViewController *weatherBriefViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CYPNowWeatherBriefViewController"];
+        childViewController = weatherBriefViewController;
     }
+    
+    childViewController.basicInfo = _basicInfo;
 }
 @end
