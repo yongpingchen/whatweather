@@ -14,6 +14,8 @@
 #import "CYPWeeklyTableViewController.h"
 #import "CYPTodayViewController.h"
 
+#import "WeatherInfo.h"
+
 
 @interface CYPMainViewController ()<CLLocationManagerDelegate>
 {
@@ -45,7 +47,7 @@
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-//    [locationManager startUpdatingLocation];
+    [locationManager startUpdatingLocation];
     
     //init the child view controllers
     for (UIViewController *childContrller in self.childViewControllers) {
@@ -103,6 +105,7 @@
                                                                 latitude:[NSNumber numberWithFloat:currentLocation.coordinate.latitude]
                                                            FinishedBlock:^(id response) {
                                                                WeatherInfo *parsedInfo = [CYPWeatherInfoParser weatherInfoWithJsonObject:response];
+                                                               currentlyViewController.basicInfo = parsedInfo.currentlyWeather;
                                                            }
                                                              failedBlock:^(NSError *error) {
                                                                  NSLog(@"error:%@",error.description);
@@ -112,6 +115,9 @@
     [locationManager stopUpdatingLocation];
     
 }
+
+#pragma mark update child views
+
 
 
 

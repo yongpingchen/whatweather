@@ -18,5 +18,6 @@
 @property(nonatomic, retain)NSString *weatherSummary; //a human-readable text summary of currently weather
 @property(nonatomic, assign)ForcastIOIcon icon;// A machine-readable summary of this data point, suitable for selecting an icon for display.
 @property (nonatomic, retain)NSDate *time;
+@property(nonatomic, assign, readonly)UIImage *iconImage;
 
 @end

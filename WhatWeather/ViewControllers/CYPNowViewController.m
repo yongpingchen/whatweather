@@ -45,6 +45,7 @@
 -(void)setBasicInfo:(BasicWeatherInfo *)basicInfo
 {
     _temperatureLabel.text = [NSString stringWithFormat:@"%.0f",basicInfo.fahrenheitTemp];
+    _iconImageView.image = basicInfo.iconImage;
 }
 /*
 #pragma mark - Navigation

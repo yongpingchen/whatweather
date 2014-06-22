@@ -7,7 +7,17 @@
 //
 
 #import "BasicWeatherInfo.h"
+#import "CYPIconImage.h"
+@interface BasicWeatherInfo()
+
+@property(nonatomic, assign, readwrite)UIImage *iconImage;
+@end
 
 @implementation BasicWeatherInfo
 
+-(void)setIcon:(ForcastIOIcon)icon
+{
+    _icon = icon;
+    _iconImage = [CYPIconImage imageWithIconType:icon];
+}
 @end
