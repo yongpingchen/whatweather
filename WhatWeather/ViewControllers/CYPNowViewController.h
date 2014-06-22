@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BasicWeatherInfo;
 
 @interface CYPNowViewController : UIViewController
 
+@property(nonatomic, retain)BasicWeatherInfo *basicInfo;
 @end

@@ -9,14 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "BasicWeatherInfo.h"
 
-typedef NS_ENUM(NSUInteger, ForcastIOPrecipType){
-    ForcastIOPrecipTypeRain,
-    ForcastIOPrecipTypeSnow,
-    ForcastIOPrecipTypeSleet,
-    ForcastIOPrecipTypeHail,
-    ForcastIOPrecipTypeUndefine
-};
-
 @interface PeriodWeatherInfo : BasicWeatherInfo
 
 @property (nonatomic, assign)float precipIntensity; //unit: in./hr (inches of liquid water per hour)

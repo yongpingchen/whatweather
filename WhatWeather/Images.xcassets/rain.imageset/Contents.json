@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Sun.png"
+      "filename" : "rain.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "Sun-1.png"
+      "filename" : "rain-1.png"
     }
   ],
   "info" : {

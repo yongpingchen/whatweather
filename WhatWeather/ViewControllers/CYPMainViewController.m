@@ -8,9 +8,24 @@
 
 #import "CYPMainViewController.h"
 #import "CYPForcastIOManager.h"
+#import "CYPWeatherInfoParser.h"
+#import <CoreLocation/CoreLocation.h>
+#import "CYPNowViewController.h"
+#import "CYPWeeklyTableViewController.h"
+#import "CYPTodayViewController.h"
 
-@interface CYPMainViewController ()
+#import "WeatherInfo.h"
 
+
+@interface CYPMainViewController ()<CLLocationManagerDelegate>
+{
+    CLLocationManager   *locationManager;
+    CLLocation          *currentLocation;
+    
+    CYPNowViewController *currentlyViewController;
+    CYPTodayViewController *todayViewController;
+    CYPWeeklyTableViewController *weeklyViewController;
+}
 @end
 
 @implementation CYPMainViewController
@@ -27,7 +42,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //start to get current location
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [locationManager startUpdatingLocation];
+    
+    //init the child view controllers
+    for (UIViewController *childContrller in self.childViewControllers) {
+        if ([childContrller isKindOfClass:[CYPNowViewController class]]) {
+            
+            currentlyViewController = (CYPNowViewController *)childContrller;
+            
+        }else if([childContrller isKindOfClass:[CYPTodayViewController class]]){
+            
+            todayViewController = (CYPTodayViewController *)childContrller;
+            
+        }else if([childContrller isKindOfClass:[CYPWeeklyTableViewController class]]){
+            
+            weeklyViewController = (CYPWeeklyTableViewController *)childContrller;
+            
+        }else{
+            NSLog(@"other view controller");
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,5 +85,41 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - CLLocationManagerDelegate methods
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"didFailWithError: %@", error);
+    UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [errorAlert show];
+}
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    NSLog(@"%d locations returned, the first one: %@", locations.count, locations[0]);
+    CLLocation *firstLocation = locations[0];
+    
+    if (!currentLocation) {
+        currentLocation = firstLocation;
+        [[CYPForcastIOManager sharedManager] forcastRequestWithLongitude:[NSNumber numberWithFloat:currentLocation.coordinate.longitude]
+                                                                latitude:[NSNumber numberWithFloat:currentLocation.coordinate.latitude]
+                                                           FinishedBlock:^(id response) {
+                                                               WeatherInfo *parsedInfo = [CYPWeatherInfoParser weatherInfoWithJsonObject:response];
+                                                               currentlyViewController.basicInfo = parsedInfo.currentlyWeather;
+                                                           }
+                                                             failedBlock:^(NSError *error) {
+                                                                 NSLog(@"error:%@",error.description);
+                                                                 
+                                                             }];
+    }
+    [locationManager stopUpdatingLocation];
+    
+}
+
+#pragma mark update child views
+
+
+
+
 
 @end
