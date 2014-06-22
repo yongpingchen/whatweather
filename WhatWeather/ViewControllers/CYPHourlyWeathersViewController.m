@@ -1,18 +1,18 @@
 //
-//  CYPTodayViewController.m
+//  CYPHourlyWeathersViewController.m
 //  WhatWeather
 //
-//  Created by Chen Yongping on 6/21/14.
+//  Created by Chen Yongping on 6/22/14.
 //  Copyright (c) 2014 AllRoudHut. All rights reserved.
 //
 
-#import "CYPTodayViewController.h"
+#import "CYPHourlyWeathersViewController.h"
 
-@interface CYPTodayViewController ()
+@interface CYPHourlyWeathersViewController ()
 
 @end
 
-@implementation CYPTodayViewController
+@implementation CYPHourlyWeathersViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
