@@ -12,7 +12,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "CYPNowViewController.h"
 #import "CYPWeeklyTableViewController.h"
-#import "CYPTodayViewController.h"
+#import "CYPHourlyWeathersViewController.h"
 
 #import "WeatherInfo.h"
 
@@ -23,7 +23,7 @@
     CLLocation          *currentLocation;
     
     CYPNowViewController *currentlyViewController;
-    CYPTodayViewController *todayViewController;
+    CYPHourlyWeathersViewController *todayViewController;
     CYPWeeklyTableViewController *weeklyViewController;
 }
 @end
@@ -55,9 +55,9 @@
             
             currentlyViewController = (CYPNowViewController *)childContrller;
             
-        }else if([childContrller isKindOfClass:[CYPTodayViewController class]]){
+        }else if([childContrller isKindOfClass:[CYPHourlyWeathersViewController class]]){
             
-            todayViewController = (CYPTodayViewController *)childContrller;
+            todayViewController = (CYPHourlyWeathersViewController *)childContrller;
             
         }else if([childContrller isKindOfClass:[CYPWeeklyTableViewController class]]){
             
@@ -106,6 +106,7 @@
                                                            FinishedBlock:^(id response) {
                                                                WeatherInfo *parsedInfo = [CYPWeatherInfoParser weatherInfoWithJsonObject:response];
                                                                currentlyViewController.basicInfo = parsedInfo.currentlyWeather;
+                                                               todayViewController.hourlyWeathers = parsedInfo.next12HoursWeather;
                                                            }
                                                              failedBlock:^(NSError *error) {
                                                                  NSLog(@"error:%@",error.description);

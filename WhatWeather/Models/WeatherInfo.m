@@ -10,4 +10,13 @@
 
 @implementation WeatherInfo
 
+-(NSArray *)next12HoursWeather
+{
+    if (_hourlyWeathers) {
+        NSRange hoursRange = {0,12};
+        return [_hourlyWeathers subarrayWithRange:hoursRange];
+    }else{
+        return nil;
+    }
+}
 @end

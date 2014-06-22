@@ -44,7 +44,6 @@
         currently.fahrenheitTemp =  [currentlyWeatherDict[@"temperature"] floatValue];
         currently.windSpeed =       [currentlyWeatherDict[@"windSpeed"] floatValue];
         currently.pressure =        [currentlyWeatherDict[@"pressure"] floatValue];
-        
         NSString *iconText = currentlyWeatherDict[@"icon"];
         currently.icon = [CYPWeatherInfoParser iconFromString:iconText];
         
@@ -62,6 +61,8 @@
         hourlyWeather.fahrenheitTemp =  [hourlyWeatherDic[@"temperature"] floatValue];
         hourlyWeather.windSpeed =       [hourlyWeatherDic[@"windSpeed"] floatValue];
         hourlyWeather.pressure =        [hourlyWeatherDic[@"pressure"] floatValue];
+        NSString *iconText =            hourlyWeatherDic[@"icon"];
+        hourlyWeather.icon =            [CYPWeatherInfoParser iconFromString:iconText];
         
         //parsing the parts of period info
         hourlyWeather.precipIntensity = [hourlyWeatherDic[@"precipIntensity"] floatValue];
@@ -85,6 +86,8 @@
         dailyWeather.fahrenheitTemp =   [dailyWeatherDict[@"temperature"] floatValue];
         dailyWeather.windSpeed =        [dailyWeatherDict[@"windSpeed"] floatValue];
         dailyWeather.pressure =         [dailyWeatherDict[@"pressure"] floatValue];
+        NSString *iconText =            dailyWeatherDict[@"icon"];
+        dailyWeather.icon =             [CYPWeatherInfoParser iconFromString:iconText];
         
         //parse daily part
         dailyWeather.maxTemp = [dailyWeatherDict[@"temperatureMax"] floatValue];
