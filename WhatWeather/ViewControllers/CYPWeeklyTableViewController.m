@@ -80,8 +80,8 @@
     
     cell.dayLabel.text = [dailyWeather.time JSTWeekDay];
     cell.iconImageView.image = dailyWeather.iconImage;
-    cell.minTempLabel.text = [NSString stringWithFormat:@"%.0f",dailyWeather.minTemp];
-    cell.maxTempLabel.text = [NSString stringWithFormat:@"%.0f",dailyWeather.maxTemp];
+    cell.minTempLabel.text = [NSString stringWithFormat:@"%.0f",dailyWeather.minCeliusTemp];
+    cell.maxTempLabel.text = [NSString stringWithFormat:@"%.0f",dailyWeather.maxCeliusTemp];
     
     return cell;
 }
