@@ -10,4 +10,5 @@
 
 @interface CYPHourlyWeathersViewController : UICollectionViewController
 
+@property(nonatomic, retain)NSArray *hourlyWeathers;
 @end

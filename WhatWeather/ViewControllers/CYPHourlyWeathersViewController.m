@@ -7,6 +7,8 @@
 //
 
 #import "CYPHourlyWeathersViewController.h"
+#import "CYPHourlyWeatherCollectionCell.h"
+#import "HourlyWeather.h"
 
 @interface CYPHourlyWeathersViewController ()
 
@@ -45,5 +47,48 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)setHourlyWeathers:(NSArray *)hourlyWeathers
+{
+    _hourlyWeathers = hourlyWeathers;
+    [self.collectionView reloadData];
+}
+
+#pragma mark - collection data source delegate methods
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+
+    if (_hourlyWeathers) {
+        return _hourlyWeathers.count;
+    }else{
+        return 0;
+    }
+}
+
+#pragma mark - collection view delegate methods
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    CYPHourlyWeatherCollectionCell *cell = (CYPHourlyWeatherCollectionCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"HourlyWeatherCell" forIndexPath:indexPath];
+    
+    if (!cell) {
+        cell = [[CYPHourlyWeatherCollectionCell alloc] init];
+    }
+    HourlyWeather *hourlyWeather = _hourlyWeathers[indexPath.row];
+    
+    cell.timeLabel.text = [NSString stringWithFormat:@"%@",hourlyWeather.time];
+    cell.iconImageView.image = hourlyWeather.iconImage;
+    cell.tempLabel.text = [NSString stringWithFormat:@"%.0f",hourlyWeather.celiusTemp];
+    
+    
+    return cell;
+    
+}
+
 
 @end
