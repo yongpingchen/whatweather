@@ -13,6 +13,8 @@
 {
     CYPNowWeatherChildViewController *childViewController;
 }
+@property (weak, nonatomic) IBOutlet UIButton *briefDetailButton;
+- (IBAction)tapBriefDetailButton:(id)sender;
 
 
 @end
@@ -63,4 +65,13 @@
 */
 
 
+- (IBAction)tapBriefDetailButton:(id)sender {
+    if ([_briefDetailButton.titleLabel.text isEqualToString:@"+"]) {
+    
+        [_briefDetailButton setTitle:@"-" forState:UIControlStateNormal];
+    }else{
+        
+        [_briefDetailButton setTitle:@"+" forState:UIControlStateNormal];
+    }
+}
 @end

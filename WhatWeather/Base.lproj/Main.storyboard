@@ -89,6 +89,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapBriefDetailButton:" destination="unJ-R8-WPU" eventType="touchUpInside" id="Gxe-EB-jeL"/>
+                                </connections>
                             </button>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xVs-uw-BGj">
                                 <rect key="frame" x="0.0" y="49" width="320" height="134"/>
@@ -102,6 +105,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="briefDetailButton" destination="SoB-aG-QtC" id="Tm9-qu-37W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfT-AQ-7K6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +116,6 @@
         <!--Now Weather Detail View Controller-->
         <scene sceneID="GVS-rI-w6a">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y3N-2P-ocw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="CYPNowWeatherDetailViewController" id="uOK-mP-XWp" customClass="CYPNowWeatherDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qTO-1E-yBa"/>
@@ -162,6 +167,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="134"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y3N-2P-ocw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="83" y="256"/>
         </scene>
@@ -309,7 +315,6 @@
         <!--Now Weather Brief View Controller-->
         <scene sceneID="0FS-Ia-ahd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H86-sA-z5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="CYPNowWeatherBriefViewController" id="aki-FL-EUi" customClass="CYPNowWeatherBriefViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G5R-Pc-cRD"/>
@@ -344,6 +349,7 @@
                         <outlet property="temperatureLabel" destination="NBM-Sz-Dpv" id="AUf-mY-x7c"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H86-sA-z5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="83" y="2"/>
         </scene>
