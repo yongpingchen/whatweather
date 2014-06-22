@@ -157,7 +157,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 km/h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfh-GU-eBj">
-                                <rect key="frame" x="154" y="93" width="75" height="21"/>
+                                <rect key="frame" x="154" y="93" width="109" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -167,6 +167,11 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="134"/>
+                    <connections>
+                        <outlet property="humidityValueLable" destination="t6d-jD-qyB" id="3v4-Ha-TJx"/>
+                        <outlet property="pressureValueLabel" destination="yYm-FI-rUw" id="j4Y-3l-bkB"/>
+                        <outlet property="windSpeedValueLabel" destination="yfh-GU-eBj" id="q8g-hf-1Eh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3N-2P-ocw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

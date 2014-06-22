@@ -7,8 +7,12 @@
 //
 
 #import "CYPNowWeatherDetailViewController.h"
+#import "BasicWeatherInfo.h"
 
 @interface CYPNowWeatherDetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *humidityValueLable;
+@property (weak, nonatomic) IBOutlet UILabel *pressureValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *windSpeedValueLabel;
 
 @end
 
@@ -33,6 +37,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)setBasicInfo:(BasicWeatherInfo *)basicInfo
+{
+    _humidityValueLable.text = [NSString stringWithFormat:@"%.0f %@",basicInfo.humidity*100, @"%"];
+    _pressureValueLabel.text = [NSString stringWithFormat:@"%.0f mb", basicInfo.pressure];
+    _windSpeedValueLabel.text = [NSString stringWithFormat:@"%.2f km/h",basicInfo.windSpeed];
 }
 
 /*
