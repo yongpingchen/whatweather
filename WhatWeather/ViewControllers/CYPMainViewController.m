@@ -67,6 +67,8 @@
             NSLog(@"other view controller");
         }
     }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchWeatherInfo:) name:@"NeedToFetchWeather" object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -141,10 +143,13 @@
     
 }
 
-#pragma mark update child views
+#pragma mark methods to fetch weather
+-(void)fetchWeatherInfo: (NSNotification *)notification
+{
+    currentLocation = nil;
+    [locationManager startUpdatingLocation];
 
-
-
+}
 
 
 @end
