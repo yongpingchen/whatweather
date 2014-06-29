@@ -125,10 +125,19 @@
 
         });
         
-        
+        CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+        [geocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
+            if (!error) {
+                for (CLPlacemark *placemark in placemarks) {
+                    [currentlyViewController setCityName:placemark.addressDictionary[@"City"]];
+                }
+            }
+        }];
 
     }
     [locationManager stopUpdatingLocation];
+    
+
     
 }
 
