@@ -38,7 +38,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+//overide setter to reload the collection view whenever hourly weather is refresh
 -(void)setHourlyWeathers:(NSArray *)hourlyWeathers
 {
     _hourlyWeathers = hourlyWeathers;

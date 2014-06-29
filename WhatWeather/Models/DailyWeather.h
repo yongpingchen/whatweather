@@ -11,7 +11,8 @@
 
 @interface DailyWeather : PeriodWeatherInfo
 
-@property(nonatomic, assign)float maxTemp;
-@property(nonatomic, assign)float minTemp;
-
+@property(nonatomic, assign)float maxFahrenheitTemp;
+@property(nonatomic, assign)float minFahrenheitTemp;
+@property(nonatomic, assign)float maxCeliusTemp;
+@property(nonatomic, assign)float minCeliusTemp;
 @end

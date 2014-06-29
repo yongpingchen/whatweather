@@ -11,4 +11,5 @@
 @interface NSDate (CYPDateHelper)
 
 -(NSInteger)JSTHour;
+-(NSString *)JSTWeekDay;
 @end
