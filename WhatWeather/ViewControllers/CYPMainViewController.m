@@ -13,7 +13,7 @@
 #import "CYPNowViewController.h"
 #import "CYPWeeklyTableViewController.h"
 #import "CYPHourlyWeathersViewController.h"
-
+#import <MBProgressHUD.h>
 #import "WeatherInfo.h"
 
 
@@ -101,18 +101,32 @@
     
     if (!currentLocation) {
         currentLocation = firstLocation;
-        [[CYPForcastIOManager sharedManager] forcastRequestWithLongitude:[NSNumber numberWithFloat:currentLocation.coordinate.longitude]
-                                                                latitude:[NSNumber numberWithFloat:currentLocation.coordinate.latitude]
-                                                           FinishedBlock:^(id response) {
-                                                               WeatherInfo *parsedInfo = [CYPWeatherInfoParser weatherInfoWithJsonObject:response];
-                                                               currentlyViewController.basicInfo = parsedInfo.currentlyWeather;
-                                                               todayViewController.hourlyWeathers = parsedInfo.next12HoursWeather;
-                                                               weeklyViewController.dailyWeathers = parsedInfo.dailyWeathers;
-                                                           }
-                                                             failedBlock:^(NSError *error) {
-                                                                 NSLog(@"error:%@",error.description);
-                                                                 
-                                                             }];
+        
+        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        
+        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+            [[CYPForcastIOManager sharedManager] forcastRequestWithLongitude:[NSNumber numberWithFloat:currentLocation.coordinate.longitude]
+                                                                    latitude:[NSNumber numberWithFloat:currentLocation.coordinate.latitude]
+                                                               FinishedBlock:^(id response) {
+                                                                   WeatherInfo *parsedInfo = [CYPWeatherInfoParser weatherInfoWithJsonObject:response];
+                                                                   currentlyViewController.basicInfo = parsedInfo.currentlyWeather;
+                                                                   todayViewController.hourlyWeathers = parsedInfo.next12HoursWeather;
+                                                                   weeklyViewController.dailyWeathers = parsedInfo.dailyWeathers;
+                                                                   dispatch_async(dispatch_get_main_queue(), ^{
+                                                                       [MBProgressHUD hideHUDForView:self.view animated:YES];
+                                                                   });
+                                                               }
+                                                                 failedBlock:^(NSError *error) {
+                                                                     NSLog(@"error:%@",error.description);
+                                                                     dispatch_async(dispatch_get_main_queue(), ^{
+                                                                         [MBProgressHUD hideHUDForView:self.view animated:YES];
+                                                                     });
+                                                                 }];
+
+        });
+        
+        
+
     }
     [locationManager stopUpdatingLocation];
     
