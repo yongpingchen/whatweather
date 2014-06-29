@@ -2,7 +2,7 @@
 platform :ios, "7.0"
 
 target "WhatWeather" do
-pod 'ECSlidingViewController', '~> 2.0.2'
+pod 'MBProgressHUD', '~> 0.8'
 pod "AFNetworking", "~> 2.0"
 end
 

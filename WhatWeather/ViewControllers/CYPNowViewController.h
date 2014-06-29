@@ -12,4 +12,5 @@
 @interface CYPNowViewController : UIViewController
 
 @property(nonatomic, retain)BasicWeatherInfo *basicInfo;
+@property(nonatomic, retain)NSString *cityName;
 @end

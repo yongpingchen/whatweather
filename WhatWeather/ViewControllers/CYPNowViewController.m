@@ -17,6 +17,7 @@
 
 }
 
+@property (weak, nonatomic) IBOutlet UILabel *addressNameLabel;
 @property (weak, nonatomic) IBOutlet UIButton *briefDetailButton;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 
@@ -59,6 +60,11 @@
     if (childViewController) {
         childViewController.basicInfo = basicInfo;
     }
+}
+-(void)setCityName:(NSString *)cityName
+{
+    _cityName = cityName;
+    _addressNameLabel.text = cityName;
 }
 /*
 #pragma mark - Navigation
