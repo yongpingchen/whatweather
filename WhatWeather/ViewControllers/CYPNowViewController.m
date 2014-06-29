@@ -7,14 +7,20 @@
 //
 
 #import "CYPNowViewController.h"
-#import "BasicWeatherInfo.h"
+#import "CYPNowWeatherChildViewController.h"
+#import "CYPNowWeatherBriefViewController.h"
+#import "CYPNowWeatherDetailViewController.h"
 
 @interface CYPNowViewController ()
 {
+    CYPNowWeatherChildViewController *childViewController;
 
 }
-@property (weak, nonatomic) IBOutlet UILabel *temperatureLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
+
+@property (weak, nonatomic) IBOutlet UIButton *briefDetailButton;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+
+- (IBAction)tapBriefDetailButton:(id)sender;
 
 @end
 
@@ -33,7 +39,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    for (UIViewController *viewController in self.childViewControllers) {
+        if ([viewController isKindOfClass:[CYPNowWeatherChildViewController class]]) {
+            childViewController = (CYPNowWeatherChildViewController *)viewController;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,8 +54,11 @@
 
 -(void)setBasicInfo:(BasicWeatherInfo *)basicInfo
 {
-    _temperatureLabel.text = [NSString stringWithFormat:@"%.0f",basicInfo.celiusTemp];
-    _iconImageView.image = basicInfo.iconImage;
+    _basicInfo = basicInfo;
+    
+    if (childViewController) {
+        childViewController.basicInfo = basicInfo;
+    }
 }
 /*
 #pragma mark - Navigation
@@ -59,4 +72,22 @@
 */
 
 
+- (IBAction)tapBriefDetailButton:(id)sender {
+    if ([_briefDetailButton.titleLabel.text isEqualToString:@"+"]) {
+        
+        [_briefDetailButton setTitle:@"-" forState:UIControlStateNormal];
+        CYPNowWeatherDetailViewController *weatherDetailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CYPNowWeatherDetailViewController"];
+        childViewController = weatherDetailViewController;
+        
+    }else{
+        [_briefDetailButton setTitle:@"+" forState:UIControlStateNormal];
+        CYPNowWeatherBriefViewController *weatherBriefViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CYPNowWeatherBriefViewController"];
+        childViewController = weatherBriefViewController;
+    }
+    
+    [_contentView addSubview:childViewController.view];
+    childViewController.basicInfo = _basicInfo;
+
+
+}
 @end
