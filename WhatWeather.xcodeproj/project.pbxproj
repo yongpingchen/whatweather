@@ -1,1080 +1,733 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>36C7312B302E437799FFE13D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-WhatWeather-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>48B94E9B3C02482C8E0E88F1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>77635E844BFB4C84BB2FCD64</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E3962B4CA3B84ADB93EE8EDC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A698B19551C80007EAD39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE3A699D19551C80007EAD39</string>
-				<string>BE3A69BC19551C81007EAD39</string>
-				<string>BE3A699619551C80007EAD39</string>
-				<string>BE3A699519551C80007EAD39</string>
-				<string>D67F5D00B22F4979879586DD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A698C19551C80007EAD39</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>CYP</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>AllRoudHut</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>BE3A69B419551C81007EAD39</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>BE3A699319551C80007EAD39</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>BE3A698F19551C80007EAD39</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>BE3A698B19551C80007EAD39</string>
-			<key>productRefGroup</key>
-			<string>BE3A699519551C80007EAD39</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>BE3A699319551C80007EAD39</string>
-				<string>BE3A69B419551C81007EAD39</string>
-			</array>
-		</dict>
-		<key>BE3A698F19551C80007EAD39</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BE3A69C419551C81007EAD39</string>
-				<string>BE3A69C519551C81007EAD39</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BE3A699019551C80007EAD39</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE3A69A419551C80007EAD39</string>
-				<string>BE3A69AE19551C81007EAD39</string>
-				<string>BE3A69A819551C80007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE3A699119551C80007EAD39</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE3A699A19551C80007EAD39</string>
-				<string>BE3A699C19551C80007EAD39</string>
-				<string>BE3A699819551C80007EAD39</string>
-				<string>77635E844BFB4C84BB2FCD64</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE3A699219551C80007EAD39</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE3A69B019551C81007EAD39</string>
-				<string>BE3A69A219551C80007EAD39</string>
-				<string>BE3A69AB19551C81007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE3A699319551C80007EAD39</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BE3A69C619551C81007EAD39</string>
-			<key>buildPhases</key>
-			<array>
-				<string>48B94E9B3C02482C8E0E88F1</string>
-				<string>BE3A699019551C80007EAD39</string>
-				<string>BE3A699119551C80007EAD39</string>
-				<string>BE3A699219551C80007EAD39</string>
-				<string>36C7312B302E437799FFE13D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WhatWeather</string>
-			<key>productName</key>
-			<string>WhatWeather</string>
-			<key>productReference</key>
-			<string>BE3A699419551C80007EAD39</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>BE3A699419551C80007EAD39</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WhatWeather.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BE3A699519551C80007EAD39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE3A699419551C80007EAD39</string>
-				<string>BE3A69B519551C81007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A699619551C80007EAD39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE3A699719551C80007EAD39</string>
-				<string>BE3A699919551C80007EAD39</string>
-				<string>BE3A699B19551C80007EAD39</string>
-				<string>BE3A69B619551C81007EAD39</string>
-				<string>E3962B4CA3B84ADB93EE8EDC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A699719551C80007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>BE3A699819551C80007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A699719551C80007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A699919551C80007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>BE3A699A19551C80007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A699919551C80007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A699B19551C80007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>BE3A699C19551C80007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A699B19551C80007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A699D19551C80007EAD39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE3A69A619551C80007EAD39</string>
-				<string>BE3A69A719551C80007EAD39</string>
-				<string>BE3A69A919551C81007EAD39</string>
-				<string>BE3A69AC19551C81007EAD39</string>
-				<string>BE3A69AD19551C81007EAD39</string>
-				<string>BE3A69AF19551C81007EAD39</string>
-				<string>BE3A699E19551C80007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WhatWeather</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A699E19551C80007EAD39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE3A699F19551C80007EAD39</string>
-				<string>BE3A69A019551C80007EAD39</string>
-				<string>BE3A69A319551C80007EAD39</string>
-				<string>BE3A69A519551C80007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A699F19551C80007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>WhatWeather-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69A019551C80007EAD39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE3A69A119551C80007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69A119551C80007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69A219551C80007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A69A019551C80007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69A319551C80007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69A419551C80007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A69A319551C80007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69A519551C80007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>WhatWeather-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69A619551C80007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CYPAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69A719551C80007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CYPAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69A819551C80007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A69A719551C80007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69A919551C81007EAD39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE3A69AA19551C81007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69AA19551C81007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69AB19551C81007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A69A919551C81007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69AC19551C81007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CYPViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69AD19551C81007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CYPViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69AE19551C81007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A69AD19551C81007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69AF19551C81007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69B019551C81007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A69AF19551C81007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69B119551C81007EAD39</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE3A69C319551C81007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE3A69B219551C81007EAD39</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE3A69B719551C81007EAD39</string>
-				<string>BE3A69B919551C81007EAD39</string>
-				<string>BE3A69B819551C81007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE3A69B319551C81007EAD39</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE3A69C119551C81007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE3A69B419551C81007EAD39</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BE3A69C919551C81007EAD39</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BE3A69B119551C81007EAD39</string>
-				<string>BE3A69B219551C81007EAD39</string>
-				<string>BE3A69B319551C81007EAD39</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>BE3A69BB19551C81007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WhatWeatherTests</string>
-			<key>productName</key>
-			<string>WhatWeatherTests</string>
-			<key>productReference</key>
-			<string>BE3A69B519551C81007EAD39</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>BE3A69B519551C81007EAD39</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WhatWeatherTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BE3A69B619551C81007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>BE3A69B719551C81007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A69B619551C81007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69B819551C81007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A699719551C80007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69B919551C81007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A699B19551C80007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69BA19551C81007EAD39</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>BE3A698C19551C80007EAD39</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>BE3A699319551C80007EAD39</string>
-			<key>remoteInfo</key>
-			<string>WhatWeather</string>
-		</dict>
-		<key>BE3A69BB19551C81007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>BE3A699319551C80007EAD39</string>
-			<key>targetProxy</key>
-			<string>BE3A69BA19551C81007EAD39</string>
-		</dict>
-		<key>BE3A69BC19551C81007EAD39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE3A69C219551C81007EAD39</string>
-				<string>BE3A69BD19551C81007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WhatWeatherTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69BD19551C81007EAD39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE3A69BE19551C81007EAD39</string>
-				<string>BE3A69BF19551C81007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69BE19551C81007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>WhatWeatherTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69BF19551C81007EAD39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE3A69C019551C81007EAD39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69C019551C81007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69C119551C81007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A69BF19551C81007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69C219551C81007EAD39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>WhatWeatherTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE3A69C319551C81007EAD39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE3A69C219551C81007EAD39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE3A69C419551C81007EAD39</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BE3A69C519551C81007EAD39</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BE3A69C619551C81007EAD39</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BE3A69C719551C81007EAD39</string>
-				<string>BE3A69C819551C81007EAD39</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BE3A69C719551C81007EAD39</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D67F5D00B22F4979879586DD</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>WhatWeather/WhatWeather-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WhatWeather/WhatWeather-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BE3A69C819551C81007EAD39</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D67F5D00B22F4979879586DD</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>WhatWeather/WhatWeather-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WhatWeather/WhatWeather-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BE3A69C919551C81007EAD39</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BE3A69CA19551C81007EAD39</string>
-				<string>BE3A69CB19551C81007EAD39</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BE3A69CA19551C81007EAD39</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/WhatWeather.app/WhatWeather</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>WhatWeather/WhatWeather-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>WhatWeatherTests/WhatWeatherTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BE3A69CB19551C81007EAD39</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/WhatWeather.app/WhatWeather</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>WhatWeather/WhatWeather-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WhatWeatherTests/WhatWeatherTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D67F5D00B22F4979879586DD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WhatWeather.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-WhatWeather.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E3962B4CA3B84ADB93EE8EDC</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-WhatWeather.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>BE3A698C19551C80007EAD39</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77635E844BFB4C84BB2FCD64 /* libPods-WhatWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3962B4CA3B84ADB93EE8EDC /* libPods-WhatWeather.a */; };
+		7D1F854619655E53007DF004 /* CYPForcastIOParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F854519655E53007DF004 /* CYPForcastIOParserTest.m */; };
+		7D1F854819655FF8007DF004 /* weatherinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D1F854719655FF8007DF004 /* weatherinfo.json */; };
+		7D27DB7B1955BCDA005F97CF /* CYPWeatherInfoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D27DB7A1955BCDA005F97CF /* CYPWeatherInfoParser.m */; };
+		7D27DB7C1955BCDA005F97CF /* CYPWeatherInfoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D27DB7A1955BCDA005F97CF /* CYPWeatherInfoParser.m */; };
+		BE3A699819551C80007EAD39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3A699719551C80007EAD39 /* Foundation.framework */; };
+		BE3A699A19551C80007EAD39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3A699919551C80007EAD39 /* CoreGraphics.framework */; };
+		BE3A699C19551C80007EAD39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3A699B19551C80007EAD39 /* UIKit.framework */; };
+		BE3A69A219551C80007EAD39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE3A69A019551C80007EAD39 /* InfoPlist.strings */; };
+		BE3A69A419551C80007EAD39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3A69A319551C80007EAD39 /* main.m */; };
+		BE3A69A819551C80007EAD39 /* CYPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3A69A719551C80007EAD39 /* CYPAppDelegate.m */; };
+		BE3A69AB19551C81007EAD39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3A69A919551C81007EAD39 /* Main.storyboard */; };
+		BE3A69AE19551C81007EAD39 /* CYPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3A69AD19551C81007EAD39 /* CYPViewController.m */; };
+		BE3A69B019551C81007EAD39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3A69AF19551C81007EAD39 /* Images.xcassets */; };
+		BE3A69B719551C81007EAD39 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3A69B619551C81007EAD39 /* XCTest.framework */; };
+		BE3A69B819551C81007EAD39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3A699719551C80007EAD39 /* Foundation.framework */; };
+		BE3A69B919551C81007EAD39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3A699B19551C80007EAD39 /* UIKit.framework */; };
+		BE3A69C119551C81007EAD39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE3A69BF19551C81007EAD39 /* InfoPlist.strings */; };
+		BE649BB519554ECD0010FA26 /* CYPNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BB419554ECD0010FA26 /* CYPNowViewController.m */; };
+		BE649BB619554ECD0010FA26 /* CYPNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BB419554ECD0010FA26 /* CYPNowViewController.m */; };
+		BE649BB919554EEE0010FA26 /* CYPWeeklyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BB819554EEE0010FA26 /* CYPWeeklyTableViewController.m */; };
+		BE649BBA19554EEE0010FA26 /* CYPWeeklyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BB819554EEE0010FA26 /* CYPWeeklyTableViewController.m */; };
+		BE649BC11955510B0010FA26 /* CYPForcastIOManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BC01955510B0010FA26 /* CYPForcastIOManager.m */; };
+		BE649BC519555A590010FA26 /* CYPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BC419555A590010FA26 /* CYPMainViewController.m */; };
+		BE649BC819555B530010FA26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE649BC719555B530010FA26 /* CoreLocation.framework */; };
+		BE649BCC1955668C0010FA26 /* WeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BCB1955668C0010FA26 /* WeatherInfo.m */; };
+		BE649BCD1955668C0010FA26 /* WeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BCB1955668C0010FA26 /* WeatherInfo.m */; };
+		BE649BD0195566AF0010FA26 /* NowWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BCF195566AF0010FA26 /* NowWeather.m */; };
+		BE649BD1195566AF0010FA26 /* NowWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BCF195566AF0010FA26 /* NowWeather.m */; };
+		BE649BD4195566FF0010FA26 /* HourlyWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BD3195566FF0010FA26 /* HourlyWeather.m */; };
+		BE649BD5195566FF0010FA26 /* HourlyWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BD3195566FF0010FA26 /* HourlyWeather.m */; };
+		BE649BD8195567150010FA26 /* DailyWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BD7195567150010FA26 /* DailyWeather.m */; };
+		BE649BD9195567150010FA26 /* DailyWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BD7195567150010FA26 /* DailyWeather.m */; };
+		BE649BE0195571840010FA26 /* PeriodWeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BDF195571840010FA26 /* PeriodWeatherInfo.m */; };
+		BE649BE1195571840010FA26 /* PeriodWeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BDF195571840010FA26 /* PeriodWeatherInfo.m */; };
+		BE649BE4195571B30010FA26 /* BasicWeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BE3195571B30010FA26 /* BasicWeatherInfo.m */; };
+		BE649BE5195571B30010FA26 /* BasicWeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BE3195571B30010FA26 /* BasicWeatherInfo.m */; };
+		BE649BE819567B330010FA26 /* CYPIconImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BE719567B330010FA26 /* CYPIconImage.m */; };
+		BE649BE919567B330010FA26 /* CYPIconImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BE719567B330010FA26 /* CYPIconImage.m */; };
+		BE649BF1195694D60010FA26 /* CYPHourlyWeathersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BF0195694D60010FA26 /* CYPHourlyWeathersViewController.m */; };
+		BE649BF2195694D60010FA26 /* CYPHourlyWeathersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BF0195694D60010FA26 /* CYPHourlyWeathersViewController.m */; };
+		BE649BFA19569E700010FA26 /* NSDate+CYPDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BF919569E700010FA26 /* NSDate+CYPDateHelper.m */; };
+		BE649BFB19569E700010FA26 /* NSDate+CYPDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BF919569E700010FA26 /* NSDate+CYPDateHelper.m */; };
+		BE649BFF1956A6050010FA26 /* CYPHourlyWeatherCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BFE1956A6050010FA26 /* CYPHourlyWeatherCollectionCell.m */; };
+		BE649C001956A6050010FA26 /* CYPHourlyWeatherCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649BFE1956A6050010FA26 /* CYPHourlyWeatherCollectionCell.m */; };
+		BE649C031956A64D0010FA26 /* CYPDailyWeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649C021956A64D0010FA26 /* CYPDailyWeatherTableViewCell.m */; };
+		BE649C041956A64D0010FA26 /* CYPDailyWeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649C021956A64D0010FA26 /* CYPDailyWeatherTableViewCell.m */; };
+		BE649C071956C1160010FA26 /* CYPNowWeatherBriefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649C061956C1160010FA26 /* CYPNowWeatherBriefViewController.m */; };
+		BE649C081956C1160010FA26 /* CYPNowWeatherBriefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649C061956C1160010FA26 /* CYPNowWeatherBriefViewController.m */; };
+		BE649C0B1956C1250010FA26 /* CYPNowWeatherDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649C0A1956C1250010FA26 /* CYPNowWeatherDetailViewController.m */; };
+		BE649C0C1956C1250010FA26 /* CYPNowWeatherDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649C0A1956C1250010FA26 /* CYPNowWeatherDetailViewController.m */; };
+		BE649C0F1956C2D40010FA26 /* CYPNowWeatherChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649C0E1956C2D40010FA26 /* CYPNowWeatherChildViewController.m */; };
+		BE649C101956C2D40010FA26 /* CYPNowWeatherChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE649C0E1956C2D40010FA26 /* CYPNowWeatherChildViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DE524F51970E00F0077639E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE3A698C19551C80007EAD39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE3A699319551C80007EAD39;
+			remoteInfo = WhatWeather;
+		};
+		7DE524F71970E00F0077639E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE3A698C19551C80007EAD39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE3A699319551C80007EAD39;
+			remoteInfo = WhatWeather;
+		};
+		BE3A69BA19551C81007EAD39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE3A698C19551C80007EAD39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE3A699319551C80007EAD39;
+			remoteInfo = WhatWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D1F854519655E53007DF004 /* CYPForcastIOParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPForcastIOParserTest.m; sourceTree = "<group>"; };
+		7D1F854719655FF8007DF004 /* weatherinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weatherinfo.json; sourceTree = "<group>"; };
+		7D27DB791955BCDA005F97CF /* CYPWeatherInfoParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPWeatherInfoParser.h; sourceTree = "<group>"; };
+		7D27DB7A1955BCDA005F97CF /* CYPWeatherInfoParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPWeatherInfoParser.m; sourceTree = "<group>"; };
+		BE3A699419551C80007EAD39 /* 何天気.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "何天気.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3A699719551C80007EAD39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE3A699919551C80007EAD39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE3A699B19551C80007EAD39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BE3A699F19551C80007EAD39 /* WhatWeather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhatWeather-Info.plist"; sourceTree = "<group>"; };
+		BE3A69A119551C80007EAD39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE3A69A319551C80007EAD39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE3A69A519551C80007EAD39 /* WhatWeather-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhatWeather-Prefix.pch"; sourceTree = "<group>"; };
+		BE3A69A619551C80007EAD39 /* CYPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYPAppDelegate.h; sourceTree = "<group>"; };
+		BE3A69A719551C80007EAD39 /* CYPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYPAppDelegate.m; sourceTree = "<group>"; };
+		BE3A69AA19551C81007EAD39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE3A69AC19551C81007EAD39 /* CYPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYPViewController.h; sourceTree = "<group>"; };
+		BE3A69AD19551C81007EAD39 /* CYPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYPViewController.m; sourceTree = "<group>"; };
+		BE3A69AF19551C81007EAD39 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE3A69B519551C81007EAD39 /* WhatWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3A69B619551C81007EAD39 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BE3A69BE19551C81007EAD39 /* WhatWeatherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhatWeatherTests-Info.plist"; sourceTree = "<group>"; };
+		BE3A69C019551C81007EAD39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE649BB319554ECD0010FA26 /* CYPNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPNowViewController.h; sourceTree = "<group>"; };
+		BE649BB419554ECD0010FA26 /* CYPNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPNowViewController.m; sourceTree = "<group>"; };
+		BE649BB719554EEE0010FA26 /* CYPWeeklyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPWeeklyTableViewController.h; sourceTree = "<group>"; };
+		BE649BB819554EEE0010FA26 /* CYPWeeklyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPWeeklyTableViewController.m; sourceTree = "<group>"; };
+		BE649BBF1955510B0010FA26 /* CYPForcastIOManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPForcastIOManager.h; sourceTree = "<group>"; };
+		BE649BC01955510B0010FA26 /* CYPForcastIOManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPForcastIOManager.m; sourceTree = "<group>"; };
+		BE649BC319555A590010FA26 /* CYPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPMainViewController.h; sourceTree = "<group>"; };
+		BE649BC419555A590010FA26 /* CYPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPMainViewController.m; sourceTree = "<group>"; };
+		BE649BC719555B530010FA26 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BE649BCA1955668C0010FA26 /* WeatherInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInfo.h; sourceTree = "<group>"; };
+		BE649BCB1955668C0010FA26 /* WeatherInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInfo.m; sourceTree = "<group>"; };
+		BE649BCE195566AF0010FA26 /* NowWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NowWeather.h; sourceTree = "<group>"; };
+		BE649BCF195566AF0010FA26 /* NowWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NowWeather.m; sourceTree = "<group>"; };
+		BE649BD2195566FF0010FA26 /* HourlyWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourlyWeather.h; sourceTree = "<group>"; };
+		BE649BD3195566FF0010FA26 /* HourlyWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourlyWeather.m; sourceTree = "<group>"; };
+		BE649BD6195567150010FA26 /* DailyWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyWeather.h; sourceTree = "<group>"; };
+		BE649BD7195567150010FA26 /* DailyWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyWeather.m; sourceTree = "<group>"; };
+		BE649BDE195571840010FA26 /* PeriodWeatherInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeriodWeatherInfo.h; sourceTree = "<group>"; };
+		BE649BDF195571840010FA26 /* PeriodWeatherInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeriodWeatherInfo.m; sourceTree = "<group>"; };
+		BE649BE2195571B30010FA26 /* BasicWeatherInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicWeatherInfo.h; sourceTree = "<group>"; };
+		BE649BE3195571B30010FA26 /* BasicWeatherInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicWeatherInfo.m; sourceTree = "<group>"; };
+		BE649BE619567B330010FA26 /* CYPIconImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPIconImage.h; sourceTree = "<group>"; };
+		BE649BE719567B330010FA26 /* CYPIconImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPIconImage.m; sourceTree = "<group>"; };
+		BE649BEE19567C8F0010FA26 /* WeatherTypesSharedHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherTypesSharedHeader.h; sourceTree = "<group>"; };
+		BE649BEF195694D60010FA26 /* CYPHourlyWeathersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPHourlyWeathersViewController.h; sourceTree = "<group>"; };
+		BE649BF0195694D60010FA26 /* CYPHourlyWeathersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPHourlyWeathersViewController.m; sourceTree = "<group>"; };
+		BE649BF819569E700010FA26 /* NSDate+CYPDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CYPDateHelper.h"; sourceTree = "<group>"; };
+		BE649BF919569E700010FA26 /* NSDate+CYPDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CYPDateHelper.m"; sourceTree = "<group>"; };
+		BE649BFD1956A6050010FA26 /* CYPHourlyWeatherCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPHourlyWeatherCollectionCell.h; sourceTree = "<group>"; };
+		BE649BFE1956A6050010FA26 /* CYPHourlyWeatherCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPHourlyWeatherCollectionCell.m; sourceTree = "<group>"; };
+		BE649C011956A64D0010FA26 /* CYPDailyWeatherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPDailyWeatherTableViewCell.h; sourceTree = "<group>"; };
+		BE649C021956A64D0010FA26 /* CYPDailyWeatherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPDailyWeatherTableViewCell.m; sourceTree = "<group>"; };
+		BE649C051956C1160010FA26 /* CYPNowWeatherBriefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPNowWeatherBriefViewController.h; sourceTree = "<group>"; };
+		BE649C061956C1160010FA26 /* CYPNowWeatherBriefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPNowWeatherBriefViewController.m; sourceTree = "<group>"; };
+		BE649C091956C1250010FA26 /* CYPNowWeatherDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPNowWeatherDetailViewController.h; sourceTree = "<group>"; };
+		BE649C0A1956C1250010FA26 /* CYPNowWeatherDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPNowWeatherDetailViewController.m; sourceTree = "<group>"; };
+		BE649C0D1956C2D40010FA26 /* CYPNowWeatherChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPNowWeatherChildViewController.h; sourceTree = "<group>"; };
+		BE649C0E1956C2D40010FA26 /* CYPNowWeatherChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPNowWeatherChildViewController.m; sourceTree = "<group>"; };
+		D67F5D00B22F4979879586DD /* Pods-WhatWeather.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatWeather.xcconfig"; path = "Pods/Pods-WhatWeather.xcconfig"; sourceTree = "<group>"; };
+		E3962B4CA3B84ADB93EE8EDC /* libPods-WhatWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhatWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE3A699119551C80007EAD39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE649BC819555B530010FA26 /* CoreLocation.framework in Frameworks */,
+				BE3A699A19551C80007EAD39 /* CoreGraphics.framework in Frameworks */,
+				BE3A699C19551C80007EAD39 /* UIKit.framework in Frameworks */,
+				BE3A699819551C80007EAD39 /* Foundation.framework in Frameworks */,
+				77635E844BFB4C84BB2FCD64 /* libPods-WhatWeather.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE3A69B219551C81007EAD39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3A69B719551C81007EAD39 /* XCTest.framework in Frameworks */,
+				BE3A69B919551C81007EAD39 /* UIKit.framework in Frameworks */,
+				BE3A69B819551C81007EAD39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE3A698B19551C80007EAD39 = {
+			isa = PBXGroup;
+			children = (
+				BE3A699D19551C80007EAD39 /* WhatWeather */,
+				BE3A69BC19551C81007EAD39 /* WhatWeatherTests */,
+				BE3A699619551C80007EAD39 /* Frameworks */,
+				BE3A699519551C80007EAD39 /* Products */,
+				D67F5D00B22F4979879586DD /* Pods-WhatWeather.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		BE3A699519551C80007EAD39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A699419551C80007EAD39 /* 何天気.app */,
+				BE3A69B519551C81007EAD39 /* WhatWeatherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE3A699619551C80007EAD39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE649BC719555B530010FA26 /* CoreLocation.framework */,
+				BE3A699719551C80007EAD39 /* Foundation.framework */,
+				BE3A699919551C80007EAD39 /* CoreGraphics.framework */,
+				BE3A699B19551C80007EAD39 /* UIKit.framework */,
+				BE3A69B619551C81007EAD39 /* XCTest.framework */,
+				E3962B4CA3B84ADB93EE8EDC /* libPods-WhatWeather.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE3A699D19551C80007EAD39 /* WhatWeather */ = {
+			isa = PBXGroup;
+			children = (
+				BE649BC9195565EB0010FA26 /* Models */,
+				BE649BB119554E9C0010FA26 /* Utils */,
+				BE649BB219554E9C0010FA26 /* ViewControllers */,
+				BE3A69A619551C80007EAD39 /* CYPAppDelegate.h */,
+				BE3A69A719551C80007EAD39 /* CYPAppDelegate.m */,
+				BE3A69A919551C81007EAD39 /* Main.storyboard */,
+				BE3A69AC19551C81007EAD39 /* CYPViewController.h */,
+				BE3A69AD19551C81007EAD39 /* CYPViewController.m */,
+				BE3A69AF19551C81007EAD39 /* Images.xcassets */,
+				BE3A699E19551C80007EAD39 /* Supporting Files */,
+			);
+			path = WhatWeather;
+			sourceTree = "<group>";
+		};
+		BE3A699E19551C80007EAD39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A699F19551C80007EAD39 /* WhatWeather-Info.plist */,
+				BE3A69A019551C80007EAD39 /* InfoPlist.strings */,
+				BE3A69A319551C80007EAD39 /* main.m */,
+				BE3A69A519551C80007EAD39 /* WhatWeather-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE3A69BC19551C81007EAD39 /* WhatWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D1F854719655FF8007DF004 /* weatherinfo.json */,
+				BE3A69BD19551C81007EAD39 /* Supporting Files */,
+				7D1F854519655E53007DF004 /* CYPForcastIOParserTest.m */,
+			);
+			path = WhatWeatherTests;
+			sourceTree = "<group>";
+		};
+		BE3A69BD19551C81007EAD39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A69BE19551C81007EAD39 /* WhatWeatherTests-Info.plist */,
+				BE3A69BF19551C81007EAD39 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE649BB119554E9C0010FA26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BE649BBF1955510B0010FA26 /* CYPForcastIOManager.h */,
+				BE649BC01955510B0010FA26 /* CYPForcastIOManager.m */,
+				7D27DB791955BCDA005F97CF /* CYPWeatherInfoParser.h */,
+				7D27DB7A1955BCDA005F97CF /* CYPWeatherInfoParser.m */,
+				BE649BE619567B330010FA26 /* CYPIconImage.h */,
+				BE649BE719567B330010FA26 /* CYPIconImage.m */,
+				BE649BF819569E700010FA26 /* NSDate+CYPDateHelper.h */,
+				BE649BF919569E700010FA26 /* NSDate+CYPDateHelper.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BE649BB219554E9C0010FA26 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE649BFC1956A6050010FA26 /* customViews */,
+				BE649BB319554ECD0010FA26 /* CYPNowViewController.h */,
+				BE649BB419554ECD0010FA26 /* CYPNowViewController.m */,
+				BE649BB719554EEE0010FA26 /* CYPWeeklyTableViewController.h */,
+				BE649BB819554EEE0010FA26 /* CYPWeeklyTableViewController.m */,
+				BE649BC319555A590010FA26 /* CYPMainViewController.h */,
+				BE649BC419555A590010FA26 /* CYPMainViewController.m */,
+				BE649BEF195694D60010FA26 /* CYPHourlyWeathersViewController.h */,
+				BE649BF0195694D60010FA26 /* CYPHourlyWeathersViewController.m */,
+				BE649C051956C1160010FA26 /* CYPNowWeatherBriefViewController.h */,
+				BE649C061956C1160010FA26 /* CYPNowWeatherBriefViewController.m */,
+				BE649C091956C1250010FA26 /* CYPNowWeatherDetailViewController.h */,
+				BE649C0A1956C1250010FA26 /* CYPNowWeatherDetailViewController.m */,
+				BE649C0D1956C2D40010FA26 /* CYPNowWeatherChildViewController.h */,
+				BE649C0E1956C2D40010FA26 /* CYPNowWeatherChildViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BE649BC9195565EB0010FA26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE649BCA1955668C0010FA26 /* WeatherInfo.h */,
+				BE649BCB1955668C0010FA26 /* WeatherInfo.m */,
+				BE649BCE195566AF0010FA26 /* NowWeather.h */,
+				BE649BCF195566AF0010FA26 /* NowWeather.m */,
+				BE649BD2195566FF0010FA26 /* HourlyWeather.h */,
+				BE649BD3195566FF0010FA26 /* HourlyWeather.m */,
+				BE649BD6195567150010FA26 /* DailyWeather.h */,
+				BE649BD7195567150010FA26 /* DailyWeather.m */,
+				BE649BDE195571840010FA26 /* PeriodWeatherInfo.h */,
+				BE649BDF195571840010FA26 /* PeriodWeatherInfo.m */,
+				BE649BE2195571B30010FA26 /* BasicWeatherInfo.h */,
+				BE649BE3195571B30010FA26 /* BasicWeatherInfo.m */,
+				BE649BEE19567C8F0010FA26 /* WeatherTypesSharedHeader.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE649BFC1956A6050010FA26 /* customViews */ = {
+			isa = PBXGroup;
+			children = (
+				BE649BFD1956A6050010FA26 /* CYPHourlyWeatherCollectionCell.h */,
+				BE649BFE1956A6050010FA26 /* CYPHourlyWeatherCollectionCell.m */,
+				BE649C011956A64D0010FA26 /* CYPDailyWeatherTableViewCell.h */,
+				BE649C021956A64D0010FA26 /* CYPDailyWeatherTableViewCell.m */,
+			);
+			path = customViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE3A699319551C80007EAD39 /* WhatWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE3A69C619551C81007EAD39 /* Build configuration list for PBXNativeTarget "WhatWeather" */;
+			buildPhases = (
+				48B94E9B3C02482C8E0E88F1 /* Check Pods Manifest.lock */,
+				BE3A699019551C80007EAD39 /* Sources */,
+				BE3A699119551C80007EAD39 /* Frameworks */,
+				BE3A699219551C80007EAD39 /* Resources */,
+				36C7312B302E437799FFE13D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatWeather;
+			productName = WhatWeather;
+			productReference = BE3A699419551C80007EAD39 /* 何天気.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE3A69B419551C81007EAD39 /* WhatWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE3A69C919551C81007EAD39 /* Build configuration list for PBXNativeTarget "WhatWeatherTests" */;
+			buildPhases = (
+				BE3A69B119551C81007EAD39 /* Sources */,
+				BE3A69B219551C81007EAD39 /* Frameworks */,
+				BE3A69B319551C81007EAD39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE3A69BB19551C81007EAD39 /* PBXTargetDependency */,
+				7DE524F61970E00F0077639E /* PBXTargetDependency */,
+				7DE524F81970E00F0077639E /* PBXTargetDependency */,
+			);
+			name = WhatWeatherTests;
+			productName = WhatWeatherTests;
+			productReference = BE3A69B519551C81007EAD39 /* WhatWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE3A698C19551C80007EAD39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CYP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = AllRoudHut;
+				TargetAttributes = {
+					BE3A69B419551C81007EAD39 = {
+						TestTargetID = BE3A699319551C80007EAD39;
+					};
+				};
+			};
+			buildConfigurationList = BE3A698F19551C80007EAD39 /* Build configuration list for PBXProject "WhatWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE3A698B19551C80007EAD39;
+			productRefGroup = BE3A699519551C80007EAD39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE3A699319551C80007EAD39 /* WhatWeather */,
+				BE3A69B419551C81007EAD39 /* WhatWeatherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE3A699219551C80007EAD39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3A69B019551C81007EAD39 /* Images.xcassets in Resources */,
+				BE3A69A219551C80007EAD39 /* InfoPlist.strings in Resources */,
+				BE3A69AB19551C81007EAD39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE3A69B319551C81007EAD39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1F854819655FF8007DF004 /* weatherinfo.json in Resources */,
+				BE3A69C119551C81007EAD39 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36C7312B302E437799FFE13D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-WhatWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48B94E9B3C02482C8E0E88F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE3A699019551C80007EAD39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE649C071956C1160010FA26 /* CYPNowWeatherBriefViewController.m in Sources */,
+				BE649BB519554ECD0010FA26 /* CYPNowViewController.m in Sources */,
+				BE649C0B1956C1250010FA26 /* CYPNowWeatherDetailViewController.m in Sources */,
+				BE649BE819567B330010FA26 /* CYPIconImage.m in Sources */,
+				BE649BE4195571B30010FA26 /* BasicWeatherInfo.m in Sources */,
+				BE649BE0195571840010FA26 /* PeriodWeatherInfo.m in Sources */,
+				BE649C0F1956C2D40010FA26 /* CYPNowWeatherChildViewController.m in Sources */,
+				BE649C031956A64D0010FA26 /* CYPDailyWeatherTableViewCell.m in Sources */,
+				BE649BFA19569E700010FA26 /* NSDate+CYPDateHelper.m in Sources */,
+				BE649BC11955510B0010FA26 /* CYPForcastIOManager.m in Sources */,
+				BE649BC519555A590010FA26 /* CYPMainViewController.m in Sources */,
+				BE649BD0195566AF0010FA26 /* NowWeather.m in Sources */,
+				BE649BFF1956A6050010FA26 /* CYPHourlyWeatherCollectionCell.m in Sources */,
+				BE649BD8195567150010FA26 /* DailyWeather.m in Sources */,
+				7D27DB7B1955BCDA005F97CF /* CYPWeatherInfoParser.m in Sources */,
+				BE3A69A419551C80007EAD39 /* main.m in Sources */,
+				BE3A69AE19551C81007EAD39 /* CYPViewController.m in Sources */,
+				BE3A69A819551C80007EAD39 /* CYPAppDelegate.m in Sources */,
+				BE649BCC1955668C0010FA26 /* WeatherInfo.m in Sources */,
+				BE649BB919554EEE0010FA26 /* CYPWeeklyTableViewController.m in Sources */,
+				BE649BD4195566FF0010FA26 /* HourlyWeather.m in Sources */,
+				BE649BF1195694D60010FA26 /* CYPHourlyWeathersViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE3A69B119551C81007EAD39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE649BD9195567150010FA26 /* DailyWeather.m in Sources */,
+				BE649C081956C1160010FA26 /* CYPNowWeatherBriefViewController.m in Sources */,
+				BE649C0C1956C1250010FA26 /* CYPNowWeatherDetailViewController.m in Sources */,
+				7D27DB7C1955BCDA005F97CF /* CYPWeatherInfoParser.m in Sources */,
+				BE649C041956A64D0010FA26 /* CYPDailyWeatherTableViewCell.m in Sources */,
+				BE649BE5195571B30010FA26 /* BasicWeatherInfo.m in Sources */,
+				BE649BBA19554EEE0010FA26 /* CYPWeeklyTableViewController.m in Sources */,
+				BE649BFB19569E700010FA26 /* NSDate+CYPDateHelper.m in Sources */,
+				BE649BD1195566AF0010FA26 /* NowWeather.m in Sources */,
+				BE649BE919567B330010FA26 /* CYPIconImage.m in Sources */,
+				BE649C101956C2D40010FA26 /* CYPNowWeatherChildViewController.m in Sources */,
+				BE649BCD1955668C0010FA26 /* WeatherInfo.m in Sources */,
+				BE649BB619554ECD0010FA26 /* CYPNowViewController.m in Sources */,
+				BE649C001956A6050010FA26 /* CYPHourlyWeatherCollectionCell.m in Sources */,
+				BE649BE1195571840010FA26 /* PeriodWeatherInfo.m in Sources */,
+				BE649BF2195694D60010FA26 /* CYPHourlyWeathersViewController.m in Sources */,
+				7D1F854619655E53007DF004 /* CYPForcastIOParserTest.m in Sources */,
+				BE649BD5195566FF0010FA26 /* HourlyWeather.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DE524F61970E00F0077639E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE3A699319551C80007EAD39 /* WhatWeather */;
+			targetProxy = 7DE524F51970E00F0077639E /* PBXContainerItemProxy */;
+		};
+		7DE524F81970E00F0077639E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE3A699319551C80007EAD39 /* WhatWeather */;
+			targetProxy = 7DE524F71970E00F0077639E /* PBXContainerItemProxy */;
+		};
+		BE3A69BB19551C81007EAD39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE3A699319551C80007EAD39 /* WhatWeather */;
+			targetProxy = BE3A69BA19551C81007EAD39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE3A69A019551C80007EAD39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE3A69A119551C80007EAD39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BE3A69A919551C81007EAD39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE3A69AA19551C81007EAD39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE3A69BF19551C81007EAD39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE3A69C019551C81007EAD39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE3A69C419551C81007EAD39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE3A69C519551C81007EAD39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE3A69C719551C81007EAD39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67F5D00B22F4979879586DD /* Pods-WhatWeather.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatWeather/WhatWeather-Prefix.pch";
+				INFOPLIST_FILE = "WhatWeather/WhatWeather-Info.plist";
+				PRODUCT_NAME = "何天気";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE3A69C819551C81007EAD39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67F5D00B22F4979879586DD /* Pods-WhatWeather.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatWeather/WhatWeather-Prefix.pch";
+				INFOPLIST_FILE = "WhatWeather/WhatWeather-Info.plist";
+				PRODUCT_NAME = "何天気";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BE3A69CA19551C81007EAD39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhatWeather.app/WhatWeather";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatWeather/WhatWeather-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WhatWeatherTests/WhatWeatherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BE3A69CB19551C81007EAD39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhatWeather.app/WhatWeather";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatWeather/WhatWeather-Prefix.pch";
+				INFOPLIST_FILE = "WhatWeatherTests/WhatWeatherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE3A698F19551C80007EAD39 /* Build configuration list for PBXProject "WhatWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE3A69C419551C81007EAD39 /* Debug */,
+				BE3A69C519551C81007EAD39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE3A69C619551C81007EAD39 /* Build configuration list for PBXNativeTarget "WhatWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE3A69C719551C81007EAD39 /* Debug */,
+				BE3A69C819551C81007EAD39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE3A69C919551C81007EAD39 /* Build configuration list for PBXNativeTarget "WhatWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE3A69CA19551C81007EAD39 /* Debug */,
+				BE3A69CB19551C81007EAD39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE3A698C19551C80007EAD39 /* Project object */;
+}
