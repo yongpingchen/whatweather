@@ -63,6 +63,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7DE524F51970E00F0077639E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE3A698C19551C80007EAD39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE3A699319551C80007EAD39;
+			remoteInfo = WhatWeather;
+		};
+		7DE524F71970E00F0077639E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE3A698C19551C80007EAD39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE3A699319551C80007EAD39;
+			remoteInfo = WhatWeather;
+		};
 		BE3A69BA19551C81007EAD39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE3A698C19551C80007EAD39 /* Project object */;
@@ -77,7 +91,7 @@
 		7D1F854719655FF8007DF004 /* weatherinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weatherinfo.json; sourceTree = "<group>"; };
 		7D27DB791955BCDA005F97CF /* CYPWeatherInfoParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPWeatherInfoParser.h; sourceTree = "<group>"; };
 		7D27DB7A1955BCDA005F97CF /* CYPWeatherInfoParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPWeatherInfoParser.m; sourceTree = "<group>"; };
-		BE3A699419551C80007EAD39 /* WhatWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3A699419551C80007EAD39 /* 何天気.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "何天気.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3A699719551C80007EAD39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE3A699919551C80007EAD39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BE3A699B19551C80007EAD39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -177,7 +191,7 @@
 		BE3A699519551C80007EAD39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE3A699419551C80007EAD39 /* WhatWeather.app */,
+				BE3A699419551C80007EAD39 /* 何天気.app */,
 				BE3A69B519551C81007EAD39 /* WhatWeatherTests.xctest */,
 			);
 			name = Products;
@@ -330,7 +344,7 @@
 			);
 			name = WhatWeather;
 			productName = WhatWeather;
-			productReference = BE3A699419551C80007EAD39 /* WhatWeather.app */;
+			productReference = BE3A699419551C80007EAD39 /* 何天気.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BE3A69B419551C81007EAD39 /* WhatWeatherTests */ = {
@@ -345,6 +359,8 @@
 			);
 			dependencies = (
 				BE3A69BB19551C81007EAD39 /* PBXTargetDependency */,
+				7DE524F61970E00F0077639E /* PBXTargetDependency */,
+				7DE524F81970E00F0077639E /* PBXTargetDependency */,
 			);
 			name = WhatWeatherTests;
 			productName = WhatWeatherTests;
@@ -498,6 +514,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7DE524F61970E00F0077639E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE3A699319551C80007EAD39 /* WhatWeather */;
+			targetProxy = 7DE524F51970E00F0077639E /* PBXContainerItemProxy */;
+		};
+		7DE524F81970E00F0077639E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE3A699319551C80007EAD39 /* WhatWeather */;
+			targetProxy = 7DE524F71970E00F0077639E /* PBXContainerItemProxy */;
+		};
 		BE3A69BB19551C81007EAD39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BE3A699319551C80007EAD39 /* WhatWeather */;
@@ -612,7 +638,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhatWeather/WhatWeather-Prefix.pch";
 				INFOPLIST_FILE = "WhatWeather/WhatWeather-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "何天気";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -626,7 +652,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhatWeather/WhatWeather-Prefix.pch";
 				INFOPLIST_FILE = "WhatWeather/WhatWeather-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "何天気";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
